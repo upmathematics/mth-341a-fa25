@@ -1,0 +1,1684 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="pandoc" />
+
+    
+    
+    <title>MTH 341: Introduction to Linear Algebra</title>
+
+        <script src="site_libs/header-attrs-2.28/header-attrs.js"></script>
+        <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="site_libs/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="site_libs/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+        <script src="site_libs/navigation-1.1/tabsets.js"></script>
+        <link href="site_libs/readthedown-0.1/readthedown.css" rel="stylesheet" />
+        <link href="site_libs/readthedown-0.1/readthedown_fonts_embed.css" rel="stylesheet" />
+        <script src="site_libs/readthedown-0.1/readthedown.js"></script>
+    
+    
+    
+        <link rel="stylesheet" href="css/custom.css" type="text/css" />
+    
+    <!-- tabsets -->
+    <script>
+      $(document).ready(function () {
+	  window.buildTabsets("toc");
+      });
+      $(document).ready(function () {
+	  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+	      $(this).parent().toggleClass('nav-tabs-open')
+	  });
+      });
+    </script>
+
+    <!-- code folding -->
+    
+    <!-- code download -->
+    
+    <!-- tabsets dropdown -->
+
+    <style type="text/css">
+      .tabset-dropdown > .nav-tabs {
+	  display: inline-table;
+	  max-height: 500px;
+	  min-height: 44px;
+	  overflow-y: auto;
+	  background: white;
+	  border: 1px solid #ddd;
+	  border-radius: 4px;
+      }
+      
+      .tabset-dropdown > .nav-tabs > li.active:before {
+	  content: "";
+	  font-family: 'Glyphicons Halflings';
+	  display: inline-block;
+	  padding: 10px;
+	  border-right: 1px solid #ddd;
+      }
+      
+      .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+	  content: "&#xe258;";
+	  border: none;
+      }
+      
+      .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+	  content: "";
+	  font-family: 'Glyphicons Halflings';
+	  display: inline-block;
+	  padding: 10px;
+	  border-right: 1px solid #ddd;
+      }
+      
+      .tabset-dropdown > .nav-tabs > li.active {
+	  display: block;
+      }
+
+      .tabset-dropdown > .nav-tabs > li.active a {
+  	  padding: 0 15px !important;
+      }
+
+      .tabset-dropdown > .nav-tabs > li > a,
+      .tabset-dropdown > .nav-tabs > li > a:focus,
+      .tabset-dropdown > .nav-tabs > li > a:hover {
+	  border: none;
+	  display: inline-block;
+	  border-radius: 4px;
+	  background-color: transparent;
+      }
+      
+      .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+	  display: block;
+	  float: none;
+      }
+      
+      .tabset-dropdown > .nav-tabs > li {
+	  display: none;
+	  margin-left: 0 !important;
+      }
+    </style>
+    
+</head>
+
+<body class="preload">
+
+   	
+         <!-- readthedown start -->   
+   <div id="content" data-toggle="wy-nav-shift">
+     <nav id="nav-top" role="navigation" aria-label="top navigation">
+       <a role="button" href="#" data-toggle="wy-nav-top"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+     </nav>
+         
+   
+        
+      <h1 class="title">MTH 341: Introduction to Linear Algebra</h1>
+         <h1 class="subtitle"><div class="line-block">Section A<br />
+Fall 2025<br />
+Department of Mathematics<br />
+University of Portland</div></h1>
+   
+         <!-- readthedown authors -->
+   <div id="sidebar">
+    <h2><a href="#content">MTH 341: Introduction to Linear
+Algebra</a></h2>
+    <div id="toc">
+      <ul>
+      <li><a href="#syllabus" id="toc-syllabus">Syllabus</a>
+      <ul>
+      <li><a href="#about-the-class"
+      id="toc-about-the-class"><strong>About the Class</strong></a></li>
+      <li><a href="#communication-tools"
+      id="toc-communication-tools"><strong>Communication
+      Tools</strong></a></li>
+      <li><a href="#assignment-tools"
+      id="toc-assignment-tools"><strong>Assignment
+      Tools</strong></a></li>
+      <li><a href="#learning-goals"
+      id="toc-learning-goals"><strong>Learning Goals</strong></a></li>
+      <li><a href="#topics-schedule" id="toc-topics-schedule">Topics
+      Schedule</a></li>
+      <li><a href="#academic-support"
+      id="toc-academic-support"><strong>Academic
+      Support</strong></a></li>
+      <li><a href="#assessment"
+      id="toc-assessment"><strong>Assessment</strong></a></li>
+      <li><a href="#assignments"
+      id="toc-assignments"><strong>Assignments</strong></a></li>
+      <li><a href="#academic-integrity"
+      id="toc-academic-integrity"><strong>Academic
+      Integrity</strong></a></li>
+      <li><a href="#other-expectations"
+      id="toc-other-expectations"><strong>Other
+      Expectations</strong></a></li>
+      </ul></li>
+      <li><a href="#materials" id="toc-materials">Materials</a>
+      <ul>
+      <li><a href="#class-readings" id="toc-class-readings">Class
+      Readings</a></li>
+      <li><a href="#books-online-resources-lists"
+      id="toc-books-online-resources-lists">Books &amp; Online Resources
+      Lists</a></li>
+      </ul></li>
+      </ul>
+    </div>
+    <div id="postamble" data-toggle="wy-nav-shift" class="status">
+                  <p class="author"><span class="glyphicon glyphicon-user"></span> <div
+class="line-block">Dr. <a href="https://www.alexjohnquijano.com"
+target="_blank">Alex John Quijano</a> <a
+href="https://creativecommons.org/licenses/by/4.0/"
+target="_blank">CC-BY 4.0</a><br />
+Department of Mathematics<br />
+University of Portland<br />
+<br />
+Made with <a href="https://cran.r-project.org/" target="_blank">R</a>
+and <a href="https://rmarkdown.rstudio.com/"
+target="_blank">RMarkdown</a><br />
+Last updated on August 23, 2025</div></p>
+                      </div>
+   </div>
+     
+
+   
+      
+   
+<!-- Don't indent these lines or it will mess pre blocks indentation --> 
+<div id="main">
+<div id="syllabus" class="section level1">
+<h1>Syllabus</h1>
+<div id="about-the-class" class="section level2">
+<h2><strong>About the Class</strong></h2>
+<div id="instructor-information" class="section level3">
+<h3>Instructor Information</h3>
+<blockquote>
+<ul>
+<li>Instructor: Dr. Alex John Quijano</li>
+<li>Office: Buckley Center 279</li>
+<li>Email: <a href="mailto:quijano@up.edu"
+class="email">quijano@up.edu</a></li>
+</ul>
+</blockquote>
+</div>
+<div id="lectures-and-discussions" class="section level3">
+<h3>Lectures and Discussions</h3>
+<p>This course meets on Mondays, Wednesdays, and Fridays. Homework will
+be scheduled for alternating Mondays. The typical class routine will
+include pre-reading assignments before each class, followed by a short
+lecture or demonstration, worksheet activities, group presentations, and
+discussions.</p>
+<blockquote>
+<p>The course schedule and location is:</p>
+<ul>
+<li><strong>Section A:</strong> MWF 12:30 PM - 1:25 PM, Franz Hall
+205</li>
+</ul>
+</blockquote>
+</div>
+<div id="textbook" class="section level3">
+<h3>Textbook</h3>
+<p>This course uses the following textbook –which is free to access– for
+reading and practice.</p>
+<blockquote>
+<ul>
+<li>Hefferon J (2022). <em>Linear Algebra</em>, 4th edition. OpenIntro.,
+<a href="https://hefferon.net/linearalgebra/"
+class="uri">https://hefferon.net/linearalgebra/</a>.</li>
+</ul>
+</blockquote>
+</div>
+<div id="credit-hours-and-prerequisites" class="section level3">
+<h3>Credit Hours and Prerequisites</h3>
+<ul>
+<li>Credit hours: 3</li>
+<li>Prerequisites: MTH 202 (Calculus II) with a grade of C- or
+higher.</li>
+</ul>
+<p><br></p>
+</div>
+</div>
+<div id="communication-tools" class="section level2">
+<h2><strong>Communication Tools</strong></h2>
+<div id="class-website" class="section level3">
+<h3>Class Website</h3>
+<p>The syllabus, tentative topics schedule, and other information are
+posted on the course website.</p>
+<blockquote>
+<p>You can access the course website at <a href=""
+target="_blank">mth-341a-fa25</a>.</p>
+</blockquote>
+<p>Note that this website can also be viewed in Teams.</p>
+</div>
+<div id="microsoft-teams" class="section level3">
+<h3>Microsoft Teams</h3>
+<p>We will be using Teams as the main real-time communication tool for
+general announcements, question-answering discussions, and direct
+messages. I added you to the Teams page already, so you just need to log
+in using your UP credentials. If not, then send a request when you log
+in. Let me know if you need any assistance.</p>
+<p>I recommend that you install the Teams software on your own machine
+for easy and stable access, instead of accessing Teams on the
+browser.</p>
+<blockquote>
+<p>The Teams for this course is <a href=""
+target="_blank">MTH-341A-fa25</a>.</p>
+</blockquote>
+<p>Note that this course website and textbook can be accessed in
+Teams.</p>
+</div>
+<div id="email" class="section level3">
+<h3>Email</h3>
+<p>My UP email is <a href="mailto:quijano@up.edu"
+class="email">quijano@up.edu</a>.</p>
+<blockquote>
+<p>If you prefer communicating through email, note that I have set up an
+email filter for this course, and you must put the “MTH 341” keyword in
+your subject line.</p>
+</blockquote>
+<p>It is easy for me to get notice of your email if you put the keyword
+in the subject line. Concise and specific messages are helpful, so I
+know how I can best help you.</p>
+<p><br></p>
+</div>
+</div>
+<div id="assignment-tools" class="section level2">
+<h2><strong>Assignment Tools</strong></h2>
+<div id="moodle" class="section level3">
+<h3>Moodle</h3>
+<p>We will be using the course <a href="https://learning.up.edu"
+target="_blank">Moodle</a> page for submitting assignments and giving
+feedback.</p>
+<blockquote>
+<p>The Moodle for this course is <a href="" target="_blank">MTH-341A -
+fa25 - Introduction to Linear Algebra</a>. You are already listed in
+Moodle for this course using your UP account.</p>
+</blockquote>
+</div>
+<div id="posit-cloud" class="section level3">
+<h3>Posit Cloud</h3>
+<p>We will be using the Python programming language as a computational
+tool for some assignments. This tool is free and open-source. We will
+use the Posit Cloud service.</p>
+<ul>
+<li><p><a href="https://login.posit.cloud/login?redirect=%2F"
+target="_blank">Posit Cloud</a> is an online computing environment that
+supports computations in Python.</p></li>
+<li><p><a href="https://www.python.org/" target="_blank">Python</a> is a
+powerful language for mathematical computing, widely used for symbolic
+algebra, numerical analysis, data visualization, and building custom
+models.</p></li>
+<li><p><a href="https://jupyter.org/" target="_blank">Jupyter</a> is an
+interactive computing environment that lets you combine live code, math,
+visualizations, and narrative text for exploring, documenting, and
+sharing mathematical analyses and simulations.</p></li>
+</ul>
+<blockquote>
+<p>Create a free account at <a
+href="https://login.posit.cloud/register?redirect=%2F"
+target="_blank">Posit Cloud Sign-Up</a> using your UP email. Note that
+you must use your UP email for me to add you into the course’s workspace
+in Posit Cloud. You will receive an email inviting you into the
+workspace at the first week of the semester.</p>
+</blockquote>
+<p>If you’d like to set up Python on your own computer, start by
+installing <a href="https://www.python.org/" target="_blank">Python</a>,
+then install <a href="https://jupyter.org/" target="_blank">Jupyter</a>
+to run and share code interactively. Feel free to reach out if you’d
+like help with any step!</p>
+<blockquote>
+<p>Python instructions and materials will be provided ad hoc.</p>
+</blockquote>
+</div>
+<div id="wolfram" class="section level3">
+<h3>Wolfram</h3>
+<p>We will be using Wolfram Mathematica and Alpha as a tool for
+numerical and symbolic computations for some assignments.</p>
+<ul>
+<li><p><a href="https://www.wolfram.com/mathematica/"
+target="_blank"><em>Wolfram Mathematica</em></a> is a powerful
+computational software system that combines numerical capabilities, and
+it can solve equations symbolically.</p></li>
+<li><p><a href="https://www.wolframalpha.com/"
+target="_blank"><em>Wolfram Alpha</em></a> is a computational search
+engine that can solve mathematical equations of varying
+complexity.</p></li>
+</ul>
+<p>Mathematica software is installed on every machine in the UP computer
+labs.</p>
+<blockquote>
+<p>Wolfram Mathematica and Alpha instructions and materials will be
+provided ad hoc.</p>
+</blockquote>
+<p><br></p>
+</div>
+</div>
+<div id="learning-goals" class="section level2">
+<h2><strong>Learning Goals</strong></h2>
+<div id="description" class="section level3">
+<h3>Description</h3>
+<p>This course delves into the practical applications of linear algebra
+across various disciplines. Students will explore fundamental concepts
+such as systems of linear equations, matrices, determinants, vector
+spaces, linear transformations, eigenvalues, and eigenvectors.
+Additionally, the course covers basic numerical algorithms for matrix
+computations. The course goes beyond theoretical foundations to address
+real-world challenges in applied mathematics, engineering, physics,
+biology, or other scientific disciplines. Through an applied approach,
+students will develop a comprehensive understanding of how linear
+algebra plays a crucial role in solving complex problems and optimizing
+processes across diverse fields. Emphasis will be placed on practical
+problem-solving, encouraging students to apply theoretical knowledge to
+real-world scenarios. This course equips students with valuable skills
+applicable to a broad spectrum of industries and research areas,
+fostering a multidisciplinary perspective.</p>
+</div>
+<div id="learning-outcomes" class="section level3">
+<h3>Learning Outcomes</h3>
+<p>Upon completion of the course, you will be able to:</p>
+<ul>
+<li>Demonstrate proficiency in working with vector space and projections
+in both two and three-dimensional spaces.</li>
+<li>Display mastery in matrix-vector operations, transformations, and
+factorizations.</li>
+<li>Understand, represent, and solve physical systems using systems of
+linear equations and matrix-vector equations.</li>
+<li>Exhibit skill in using basic numerical algorithms for matrix-vector
+computations.</li>
+<li>Apply linear algebra concepts in data probability and statistics,
+engineering, and computer science.</li>
+<li>Write clear and concise mathematical solutions to linear algebra
+problems.</li>
+<li>Communicate effectively about linear algebra with other students,
+instructors, and professionals.</li>
+<li>Work independently and as part of a team to solve linear algebra
+problems.</li>
+</ul>
+</div>
+<div id="learning-objectives" class="section level3">
+<h3>Learning Objectives</h3>
+<p>The following learning objectives are designed to build on one
+another, with some overlap. The goal is to help you achieve proficiency
+in these areas.</p>
+<ul>
+<li>Perform basic matrix-vector operations which includes addition,
+subtraction, multiplication, inversion, and norms.</li>
+<li>Solve systems of linear equations representing physical systems
+using methods such as row reduction, and matrix inversion.</li>
+<li>Compute and work with eigenvalues and eigenvectors to explain linear
+transformations of matrices.</li>
+<li>Implement basic numerical algorithms for matrix-vector
+computations.</li>
+</ul>
+<p><br></p>
+</div>
+</div>
+<div id="topics-schedule" class="section level2">
+<h2>Topics Schedule</h2>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><strong>Week</strong></th>
+<th align="center"><strong>Day</strong></th>
+<th align="left"><strong>Topic</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><strong>1</strong></td>
+<td align="center">M 8/25</td>
+<td align="left">Orientation and Linear Systems</td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">W 8/27</td>
+<td align="left">Gauss’s Method</td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center">F 8/29</td>
+<td align="left">Solution Sets</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>2</strong></td>
+<td align="center">M 9/1</td>
+<td align="left">Echelon Form</td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center">W 9/3</td>
+<td align="left">Row Reduction</td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">F 9/5</td>
+<td align="left">Linear Combination</td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>3</strong></td>
+<td align="center">M 9/8</td>
+<td align="left">Vectors</td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">W 9/10</td>
+<td align="left">Subspace and Span</td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center">F 9/12</td>
+<td align="left">Linear Independence</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>4</strong></td>
+<td align="center">M 9/15</td>
+<td align="left">Basis</td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center">W 9/17</td>
+<td align="left">Dimension</td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">F 9/19</td>
+<td align="left">Vector Space</td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>5</strong></td>
+<td align="center">M 9/22</td>
+<td align="left">Isomorphisms</td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">W 9/24</td>
+<td align="left"><em>Review</em></td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center">F 9/26</td>
+<td align="left"><strong>Exam 1</strong></td>
+</tr>
+<tr class="even">
+<td align="center"><strong>6</strong></td>
+<td align="center">M 9/29</td>
+<td align="left">Characteristics</td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center">W 10/1</td>
+<td align="left">Homomorphisms</td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">F 10/3</td>
+<td align="left">Null Space and Column Space</td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>7</strong></td>
+<td align="center">M 10/6</td>
+<td align="left">Linear Maps</td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">W 10/8</td>
+<td align="left">Matrices</td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center">F 10/10</td>
+<td align="left">Matrix Sums and Scalar Products</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>8</strong></td>
+<td align="center">M 10/13</td>
+<td align="left"><em>Fall Vacation</em></td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center">W 10/15</td>
+<td align="left"><em>Fall Vacation</em></td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">F 10/17</td>
+<td align="left"><em>Fall Vacation</em></td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>9</strong></td>
+<td align="center">M 10/20</td>
+<td align="left">Matrix Multiplication</td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">W 10/22</td>
+<td align="left">Matrix Inverse</td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center">F 10/24</td>
+<td align="left">Change of Basis</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>10</strong></td>
+<td align="center">M 10/27</td>
+<td align="left">Projection</td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center">W 10/29</td>
+<td align="left"><em>Review</em></td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">F 10/31</td>
+<td align="left"><strong>Exam 2</strong></td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>11</strong></td>
+<td align="center">M 11/3</td>
+<td align="left">Determinants</td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">W 11/5</td>
+<td align="left">Properties of Determinants</td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center">F 11/7</td>
+<td align="left">Similarity</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>12</strong></td>
+<td align="center">M 11/10</td>
+<td align="left">Diagonalizability</td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center">W 11/12</td>
+<td align="left">Eigentheory</td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">F 11/14</td>
+<td align="left">Eigenvalues and Eigenvectors</td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>13</strong></td>
+<td align="center">M 11/17</td>
+<td align="left">Eigendecomposition</td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">W 11/19</td>
+<td align="left">Row Space and Left Null Space</td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center">F 11/21</td>
+<td align="left">Four Fundamental Subspaces of Linear Algebra</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>14</strong></td>
+<td align="center">M 11/24</td>
+<td align="left"><em>Review</em></td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center">W 11/26</td>
+<td align="left"><strong>Exam 3</strong></td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">F 11/28</td>
+<td align="left"><em>Thanksgiving Vacation</em></td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>15</strong></td>
+<td align="center">M 12/1</td>
+<td align="left">Linear Least Squares</td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">W 12/3</td>
+<td align="left">Singular Value Decomposition</td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center">F 12/5</td>
+<td align="left"><em>Review</em></td>
+</tr>
+<tr class="even">
+<td align="center"><strong>16</strong></td>
+<td align="center">Tu 12/9</td>
+<td align="left"><strong>Final Exam Section A (8:00 AM - 10:00
+AM)</strong></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</div>
+<div id="academic-support" class="section level2">
+<h2><strong>Academic Support</strong></h2>
+<div id="help-hours" class="section level3">
+<h3>Help Hours</h3>
+<blockquote>
+<p>Dr. Alex John Quijano</p>
+<ul>
+<li>Walk-in Monday to Friday at 1:30 PM - 2:30 PM, Buckley Center
+279</li>
+<li><a href="https://calendly.com/alexjohnquijano/helphours"
+target="_blank">One-to-One, Buckley Center 279 or in Teams</a>
+<br><em>Click on the link to sign-up for a 15-minute session.</em></li>
+</ul>
+</blockquote>
+<p>My walk-in help hours start week 2. Note that you can bring a fellow
+student with you when you sign-up for a session. Just click the “Add
+Guests” link when you sign-up, and add in your fellow student’s UP
+email. If you need more than 15 minutes, you can book at least two
+consecutive sessions.</p>
+</div>
+<div id="the-learning-commons" class="section level3">
+<h3>The Learning Commons<span class="math inline">\(^*\)</span></h3>
+<p>Students may receive academic assistance through Learning Commons
+tutoring services and workshops. The Co-Pilot peer tutoring program
+provides students with opportunities to work with other students to get
+help in writing, math, group projects, and many other courses. Schedule
+an appointment to meet with a Co-Pilot (tutor) by visiting the Learning
+Commons website (<a href="www.up.edu/learningcommons"
+target="_blank">www.up.edu/learningcommons</a>). Students can also meet
+with a Co-Pilot during drop-in hours. Check the Learning Commons website
+or stop by the Learning Commons in BC 163 to learn more about their
+services. Co-Pilots are a wonderful support along your academic
+journey.</p>
+</div>
+<div id="math-resource-center" class="section level3">
+<h3>Math Resource Center</h3>
+<p>Appointment-based tutoring accepts appointments starting week 1 and
+sessions start week 2. Visit the <a
+href="https://www.up.edu/learningcommons/tutoring-services/math-resource-center/index.html"
+target="_blank">Math Resource Center</a> website to sign-up for an
+appointment. Drop-in tutoring is Monday to Thursday, 3:00 PM - 7:00 PM
+in BC 163 and starts week 2. Check the Math Resource Center website or
+drop by the center for more information.</p>
+</div>
+<div id="help-hours-guidelines" class="section level3">
+<h3>Help Hours Guidelines</h3>
+<p>It is strongly recommended that you attend the walk-in help hours or
+set up a one-to-one meeting with the me if you feel like you are falling
+behind during our in-person class activities, or if you just need to
+clarify concepts discussed in class. In order to be more productive
+during a one-to-one meeting (or the walk-in help hours), these are three
+recommendations before you come in:</p>
+<ul>
+<li>List all gaps in knowledge you have (missed concepts) or list all
+concepts that were unclear to you during class. We will address them one
+by one.</li>
+<li>Prepare questions you want answered and be ready to show relevant
+materials.</li>
+<li>Regarding assignments, prepare to show (a) what are the steps you
+have tried and (b) what are the errors you encountered and the
+strategies you have tried.</li>
+</ul>
+<p>Note that these are recommendations so that you can get the most out
+of the help hours allocated for you. If you just want to come in and
+chat about something else, feel free to do so. If the dedicated time for
+one-to-one meeting does not work for you, send me a message to set up an
+appointment.</p>
+</div>
+<div id="collaboration-policy" class="section level3">
+<h3>Collaboration Policy</h3>
+<p>I expect you to participate in the class through lectures, class
+activities, discussions, homework, and other engagements. I also expect
+you to make use of opportunities to get help outside of class (help
+hours, Teams, email, tutoring) if you need help. Concise and specific
+messages are the most helpful so I know how I can best help you.</p>
+<blockquote>
+<p>You are encouraged to participate in discussions with your peers
+regarding assignments. However, each student must take responsibility
+and ownership of their work and submit their work individually, except
+for group projects.</p>
+</blockquote>
+<p><br></p>
+</div>
+</div>
+<div id="assessment" class="section level2">
+<h2><strong>Assessment</strong></h2>
+<div id="assessment-disclosure-statement" class="section level3">
+<h3>Assessment Disclosure Statement<span
+class="math inline">\(^*\)</span></h3>
+<p>Student work products for this course may be used by the University
+for educational quality assurance purposes. For reasons of
+confidentiality, such examples will not include student names.</p>
+</div>
+<div id="standards-based-grading" class="section level3">
+<h3>Standards-Based Grading</h3>
+<p>Learning ODEs demands focus, rigorous examination of the concepts you
+have encountered, and a process of ongoing refinement and improvement.
+You will be assessed on your proficiency in solving a variety of ODEs,
+both graphically and analytically, using different methods. You will
+have opportunities to demonstrate your proficiency, revise your work,
+and reflect on your growth in identifying the type of ODE, determining
+appropriate solution methods, and analyzing the behavior of the
+solutions.</p>
+<p>This course uses a standards-based grading system, which emphasizes
+mastery of specific learning objectives. This approach is more precise
+and motivating than traditional grading methods and fosters a more
+equitable learning environment. Key features of standards-based grading
+include:</p>
+<ul>
+<li>A clear focus on mastering defined learning objectives</li>
+<li>The use of diverse assessment methods to evaluate understanding</li>
+<li>Regular, detailed feedback to guide your progress</li>
+<li>Support in setting meaningful goals and tracking your growth</li>
+</ul>
+<p>This system prioritizes learning and personal development, enabling
+you to excel and reach your highest potential.</p>
+</div>
+<div id="general-marking-guide" class="section level3">
+<h3>General Marking Guide</h3>
+<p>Each assignment will be graded according to the general marking guide
+detailed below. You will be given feedback on your assignment and
+learning process to improve your performance. Note that each assignment
+has its own rubric guided by these general guidelines and the
+assignment’s learning objectives.</p>
+<p>Given the following marks, your work:</p>
+<table>
+<colgroup>
+<col width="27%" />
+<col width="72%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left"><strong>Mark</strong></th>
+<th align="left"><strong>Rubric Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>Outstanding <br>(O)</strong></td>
+<td align="left">Demonstrates a full understanding of the material,
+clearly and concisely explains concepts, applies them correctly and
+efficiently to solve problems, and may extend the concepts to new
+situations.</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Excellent <br>(E)</strong></td>
+<td align="left">Demonstrates an approximate understanding of the
+material, may have made minor errors but is able to correct them and
+explain the reasoning, solves problems correctly, and may need more time
+or practice to improve efficiency.</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Acceptable <br>(A)</strong></td>
+<td align="left">Demonstrates some understanding of the material but
+makes errors, can solve some problems, may need help with more difficult
+ones, and may need to work on improving problem-solving skills and
+reasoning.</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Needs Improvement <br>(NI)</strong></td>
+<td align="left">Shows potential but needs more work, may have made
+several errors, is unable to solve problems, and needs to focus on
+understanding the material and developing problem-solving skills.</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Needs Major Improvement <br>(NMI)</strong></td>
+<td align="left">Shows little understanding of the material, may have
+made many significant errors, is unable to solve problems, and needs to
+focus on building a foundational understanding of the material.</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Missing <br>(M)</strong></td>
+<td align="left">Shows incomplete (either entirely or partially) or
+incomprehensible work.</td>
+</tr>
+</tbody>
+</table>
+<p>Note that these are categorical marks (not numerical scores).</p>
+</div>
+<div id="final-course-grades" class="section level3">
+<h3>Final Course Grades</h3>
+<table>
+<thead>
+<tr class="header">
+<th align="left"><strong>Assignment</strong></th>
+<th align="center"><strong>Rank</strong></th>
+<th align="center"><strong>Mark</strong></th>
+<th align="center"><strong>A</strong></th>
+<th align="center"><strong>B</strong></th>
+<th align="center"><strong>C</strong></th>
+<th align="center"><strong>D</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>Exams</strong></td>
+<td align="center">1</td>
+<td align="center">O</td>
+<td align="center">90%</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="center"></td>
+<td align="center">E</td>
+<td align="center">-</td>
+<td align="center">80%</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="center"></td>
+<td align="center">A</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">70%</td>
+<td align="center">-</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="center"></td>
+<td align="center">NI</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">60%</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Homeworks</strong></td>
+<td align="center">2</td>
+<td align="center">O</td>
+<td align="center">100%</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="center"></td>
+<td align="center">E</td>
+<td align="center">-</td>
+<td align="center">90%</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="center"></td>
+<td align="center">A</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">80%</td>
+<td align="center">-</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="center"></td>
+<td align="center">NI</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">70%</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Worksheets</strong></td>
+<td align="center">3</td>
+<td align="center">Completed</td>
+<td align="center">90%</td>
+<td align="center">80%</td>
+<td align="center">70%</td>
+<td align="center">60%</td>
+</tr>
+</tbody>
+</table>
+<p>The above table shows the percent of given assignments. These
+percentages are minimum requirements for each letter grade. The rank
+determines the importance of each assignment where 1 means the highest
+rank and 3 means lowest rank.</p>
+<blockquote>
+<p>If you need more assistance on understanding your overall standing in
+this course, I encourage you to communicate with me directly.</p>
+</blockquote>
+<p><br></p>
+</div>
+</div>
+<div id="assignments" class="section level2">
+<h2><strong>Assignments</strong></h2>
+<div id="submission-guidelines" class="section level3">
+<h3>Submission Guidelines</h3>
+<blockquote>
+<p>You need to submit all assignments online through Moodle. Your
+assignments must be in a single <code>.pdf</code> file along with
+supplementary Python code (<code>.py</code> or <code>.ipynb</code>) if
+any.</p>
+</blockquote>
+<p>Your work must be labeled correctly and clearly written. Homework,
+worksheets, and exams can be electronically hand-written or typed but
+must be uploaded to Moodle as a single <code>.pdf</code> file. Here are
+additional submission rules:</p>
+<ul>
+<li>If you choose to handwrite your answers on paper, scan your document
+using a scanner app to ensure the text is clear. I recommend using the
+“Adobe Scan” app, which is available for both Android and iOS.</li>
+<li>If the assignment involves a Python coding component, you must
+include all relevant Python code files (<code>.py</code> and
+<code>.ipynb</code>) that generated all outputs, plots, and analysis.
+Your Python code must be properly documented or with comments.</li>
+</ul>
+</div>
+<div id="worksheets" class="section level3">
+<h3>Worksheets</h3>
+<p>There will be worksheets every class day except for exam weeks. The
+purpose of the worksheets is for in-class group work and activities.</p>
+<blockquote>
+<p>You must submit your worksheet individually by end-of-class or
+end-of-day. Your name must exist in your worksheet and the names of your
+collaborators.</p>
+</blockquote>
+<p>Worksheets are marked mostly on completion, and partially on
+correctness. It will be marked either pass or fail, there will no
+detailed feedback on worksheets, and no opportunities for revisions and
+make-up.</p>
+</div>
+<div id="homeworks" class="section level3">
+<h3>Homeworks</h3>
+<p>Homework is assigned every Monday. The purpose of the homework is to
+provide practice with problems, and it will include tasks that involve
+Python.</p>
+<blockquote>
+<p>You must submit your homework individually by the end of the day on
+Friday of the week it is assigned.</p>
+</blockquote>
+<p>Homeworks are marked using the general grading guide and will be
+returned with detailed feedback.</p>
+</div>
+<div id="homework-revisions" class="section level3">
+<h3>Homework Revisions</h3>
+<p>You can revise your homework for an up-grade, meaning - for example -
+a grade of “NI” can be up-graded to “A”.</p>
+<p>Here are the qualifications and requirements for homework
+revisions:</p>
+<ul>
+<li>A homework mark of “NMI”, “NI”, “A”, or “E”.</li>
+<li>The revised homework must be completed, meaning all parts should
+have your full written solutions.</li>
+<li>Homework marked with “M” is disqualified for revisions, but you can
+still use them as practice.</li>
+</ul>
+<p>Here are the rules for homework revisions:</p>
+<ul>
+<li>Homework revisions are accepted within one week of the homework
+being returned to you, otherwise the grade is set.</li>
+<li>You can revised your homework multiple times as long as it is not
+marked as “M”.</li>
+</ul>
+</div>
+<div id="exams" class="section level3">
+<h3>Exams</h3>
+<p>Exams are given in two parts which are in written and oral forms.
+Below are the description of each part of the exams.</p>
+<div id="written" class="section level4">
+<h4><strong>Written</strong></h4>
+<p>The written part of the exam allows you demonstrate your
+understanding of the material in written form. This part will be
+evaluated on the details of your computations and solutions.</p>
+<p>Written exams will be graded on 3 components:</p>
+<table>
+<colgroup>
+<col width="27%" />
+<col width="72%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="right"><strong>Written Component</strong></th>
+<th align="left"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right"><strong>Methodology</strong></td>
+<td align="left">The method should be sound and well-founded. It should
+be based on a solid understanding of the underlying principles. The
+method should be applied correctly and consistently.</td>
+</tr>
+<tr class="even">
+<td align="right"><strong>Reasoning</strong></td>
+<td align="left">The solution method should be explained in a clear and
+logical way. The steps of the method should be justified and explained.
+The reasonableness of the solution should be justified.</td>
+</tr>
+<tr class="odd">
+<td align="right"><strong>Writing</strong></td>
+<td align="left">The solution process should be written in a clear and
+concise way. The steps of the method should be easy to follow. The
+graphs/diagrams/equations should be clear and helpful. The mathematical
+notation should be used clearly and correctly.</td>
+</tr>
+</tbody>
+</table>
+<p>Here are the rules for the written part of the exams:</p>
+<ul>
+<li>Written exams are take-home exam and given Monday of an exam
+week.</li>
+<li>Written exams are due on the day of your scheduled oral part of the
+exam.</li>
+<li>Late submissions are not accepted unless the instructor allows.</li>
+</ul>
+</div>
+<div id="oral" class="section level4">
+<h4><strong>Oral</strong></h4>
+<p>The oral part of the exam allows you to demonstrate your
+understanding of the material verbally. It is administered mostly in
+dialog style during exam days. The oral exam lasts only ten to fifteen
+minutes and includes predetermined questions about problems from the
+written exam, which are provided to the student ahead of time. This part
+will be evaluated on your ability to explain key concepts and navigate
+through different ways to solve problems, rather than detailed
+solutions.</p>
+<p>Oral exams will be graded on 3 components:</p>
+<table>
+<colgroup>
+<col width="27%" />
+<col width="72%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="right"><strong>Oral Component</strong></th>
+<th align="left"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right"><strong>Knowledge</strong></td>
+<td align="left">This includes the student’s ability to recall and apply
+mathematical concepts and procedures. The student should be able to
+answer questions about the material in a clear and concise way, and they
+should be able to solve problems using a variety of methods.</td>
+</tr>
+<tr class="even">
+<td align="right"><strong>Communication</strong></td>
+<td align="left">This includes the student’s ability to explain their
+thinking clearly, concisely, and timely. The student should be able to
+use mathematical language fluently, and they should be able to
+communicate their ideas in a way that is understandable.</td>
+</tr>
+<tr class="odd">
+<td align="right"><strong>Problem-solving</strong></td>
+<td align="left">This includes the student’s ability to identify and
+solve mathematical problems. The student should be able to think
+critically about problems, and they should be able to develop and
+implement strategies for solving them.</td>
+</tr>
+</tbody>
+</table>
+<p>Here are the rules for the oral part of the exams:</p>
+<ul>
+<li>You must sign-up for a time slot on an exam week 24 hours in
+advance.</li>
+<li>You must submit your written exam at the beginning of the oral
+exam.</li>
+<li>You may have all other resources with you during the oral exam, that
+includes books and online resources.</li>
+<li>You may not communicate with others during the exam except to
+me.</li>
+<li>You may not ask conceptual questions to me except for clarifying
+questions about the problem, and minor computations.</li>
+</ul>
+<p>The grade you will receive for exams are a breakdown of your written
+and oral exam results with detailed feedback.</p>
+<blockquote>
+<p>Here is how you can sign-up for the exam (oral part):</p>
+<ul>
+<li><a
+href="https://calendly.com/alexjohnquijano/introduction-to-linear-algebra-exam"
+target="_Blank">Introduction to Linear Algebra Exam</a> <br> <em>Click
+on the link to sign-up for a 15-minute session.</em></li>
+</ul>
+</blockquote>
+</div>
+</div>
+<div id="exam-retakes" class="section level3">
+<h3>Exam Retakes</h3>
+<p>Your exams can be revised and you can retake both written and oral
+parts. Exam retakes allows you to have your exams up-graded, meaning -
+for example - a grade of “NI” can be up-graded to “A”.</p>
+<p>Exam retake procedure are similar to the original exam. The written
+part is your revised exam and the oral part is explaining your revisions
+and responding to feedback from the last oral exam.</p>
+<p>Here are the qualifications for exam retakes:</p>
+<ul>
+<li>An exam grade of “NMI”, NI”, “A”, or “E”.</li>
+<li>The revised exam must be completed, meaning all parts should have
+your full written solutions. Incomplete work is disqualified for
+revisions and retakes.</li>
+</ul>
+<p>Here are the rules for exam retakes:</p>
+<ul>
+<li>Exam retakes must be done within one week of the exam being returned
+to you, otherwise the grade is set.</li>
+<li>If you need to retake an exam more than one week of the exam being
+returned to you, let me know for a discussion.</li>
+<li>The same written and oral exam part rules apply for exam
+retakes.</li>
+</ul>
+<blockquote>
+<p>Here is how you can sign-up for the exam (oral part) retakes:</p>
+<ul>
+<li><a
+href="https://calendly.com/alexjohnquijano/retake-or-make-up-exam-upper-division"
+target="_Blank">Introduction to Linear Algebra Exam Retakes</a> <br>
+<em>Click on the link to sign-up for a 15-minute session.</em></li>
+</ul>
+</blockquote>
+</div>
+<div id="make-up-exams" class="section level3">
+<h3>Make-up Exams</h3>
+<p>You can make-up exams due to extenuating circumstances. Please let me
+know if you can’t make it to an exam day. If you missed an exam day,
+please let me know as soon as possible to discuss the next steps.</p>
+<p>Here are the rules of make-up exams:</p>
+<ul>
+<li>A missed exam day means that you will automatically receive a grade
+of <em>M</em> for that particular exam.</li>
+<li>You need to have a prior discussion with me before you can schedule
+a make-up exam.</li>
+<li>Make-up exams by appointment must be scheduled 24 hours in
+advance.</li>
+<li>Make-up exams must be done within one week of the original exam
+day.</li>
+<li>If you need to make-up an exam more than one week of the original
+exam day, let me know for a discussion.</li>
+</ul>
+<blockquote>
+<p>Here is how you can sign-up for the exam (oral part) make-ups:</p>
+<ul>
+<li><a
+href="https://calendly.com/alexjohnquijano/retake-or-make-up-exam-upper-division"
+target="_Blank">Introduction to Linear Algebra Exam Make-Ups</a> <br>
+<em>Click on the link to sign-up for a 15-minute session.</em></li>
+</ul>
+</blockquote>
+</div>
+<div id="final-exam" class="section level3">
+<h3>Final Exam</h3>
+<p>The final exam includes the written and oral parts. This exam will be
+cumulative. Makeup exams are not allowed during finals week. The same
+written and oral exam part rules apply for the final exam, except that
+retakes are no longer allowed.</p>
+<blockquote>
+<p>The final exam is on:</p>
+<ul>
+<li><strong>Section A:</strong> Tu December 9, 8:00 AM - 10:00 AM, Franz
+Hall 205</li>
+</ul>
+</blockquote>
+<p><br></p>
+</div>
+</div>
+<div id="academic-integrity" class="section level2">
+<h2><strong>Academic Integrity</strong></h2>
+<div id="the-honor-code-statement" class="section level3">
+<h3>The Honor Code Statement</h3>
+<blockquote>
+<p>I commit to upholding the code of academic integrity by demonstrating
+ethical and responsible academic practices and adhering to the
+principles of academic integrity.</p>
+</blockquote>
+<p>You are encouraged to utilize all resources available to you,
+including course materials, online references, and collaborative
+discussions with your classmates. However, you must adhere to the
+following principles:</p>
+<ul>
+<li><strong>Follow the Academic Integrity Policy:</strong> Ensure all
+work is your own or properly credited where collaboration or external
+resources are involved.</li>
+<li><strong>Comply with the Course AI Policy:</strong> Any use of AI
+tools must align with the course-specific AI guidelines provided. Misuse
+of AI will be considered a violation of academic integrity.</li>
+<li><strong>Adhere to Referencing and Citation Guidelines:</strong>
+Properly cite all external sources used in your work to give appropriate
+credit and avoid plagiarism.</li>
+<li><strong>Uphold the Academic Honor Code:</strong> I trust you to
+maintain the highest standards of honesty and integrity in your
+work.</li>
+<li><strong>Take Ownership of Your Work:</strong> You must contribute
+meaningfully and be prepared to explain and defend your work.</li>
+</ul>
+</div>
+<div id="code-of-academic-integrity" class="section level3">
+<h3>Code of Academic Integrity<span
+class="math inline">\(^*\)</span></h3>
+<p>The University of Portland is a diverse academic community of
+learners and scholars who are dedicated to freely sharing ideas and
+engaging in respectful discussion of those ideas to discover truth. Such
+pursuits require each person, whether student or faculty, to present
+truthfully our own ideas and give credit to others for the ideas that
+they generate. Thus, cheating on exams, copying another student’s
+assignment, including homework, or using the work of others without
+proper citation are some examples of violating academic integrity.</p>
+<p>Especially for written and oral assignments, students have an ethical
+responsibility to properly cite the authors of any books, articles, or
+other sources that they use. Students should expect to submit
+assignments to Turnitin, a database that ensures assignments are
+original work of the student submitting. Each discipline has guidelines
+for how to give appropriate credit, and instructors will communicate the
+specific guidelines for their discipline. The Clark Library also
+maintains a webpage that provides citation guidelines at <a
+href="https://libguides.up.edu/cite"
+target="_blank_">https://libguides.up.edu/cite</a>.</p>
+<p>The misuse of AI to shortcut course learning outcomes will be treated
+as a violation of academic integrity comparable to plagiarism or
+cheating. Faculty are responsible for including a written “Course AI
+Policy” in their syllabi that clearly states what they consider
+appropriate and inappropriate uses of AI in the context of their
+courses. Students are responsible for using AI in ways that do not
+detract from the established learning outcomes of the course. All
+members of the scholarly community are responsible for demonstrating
+sound judgment in discerning when and how to utilize AI in their work,
+upholding standards of citation, originality, and integrity.</p>
+</div>
+<div id="course-ai-policy" class="section level3">
+<h3>Course AI Policy</h3>
+<p>The use of generative AI —such as Copilot, Gemini, or ChatGPT— is
+encouraged and allowed in all of its capacity. However, students must
+use these tools ethically and responsibly. To use generative AI
+responsibly in this class, students should grasp underlying concepts,
+acknowledge AI’s assistance, protect data privacy, verify information,
+and uphold academic honor code. AI should be seen as a learning aid, not
+a replacement for critical thinking.</p>
+</div>
+<div id="ethics-of-information" class="section level3">
+<h3>Ethics of Information<span class="math inline">\(^*\)</span></h3>
+<p>The University of Portland is a community dedicated to the
+investigation and discovery of processes for thinking ethically and
+encouraging the development of ethical reasoning in the formation of the
+whole person. Using information ethically, as an element in open and
+honest scholarly endeavors, involves moral reasoning to determine the
+right way to access, create, distribute, and employ information,
+including: considerations of intellectual property rights, fair use,
+information bias, censorship, and privacy. More information can be found
+in the Clark Library’s guide to the Ethical Use of Information at <a
+href="https://libguides.up.edu/ethicaluse"
+target="_blank">libguides.up.edu/ethicaluse</a>.</p>
+</div>
+</div>
+<div id="other-expectations" class="section level2">
+<h2><strong>Other Expectations</strong></h2>
+<div id="deadline-extensions" class="section level3">
+<h3>Deadline Extensions</h3>
+<p>If you need more time to submit an assignment, you may request an
+extension by following these steps:</p>
+<ul>
+<li>Communicate with me at least 12 hours before the deadline.</li>
+<li>Specify the exact day you plan to submit your work or the number of
+extra days you need.</li>
+<li>Please ensure that you adhere to the established timeline for
+submitting assignments, as it is important to maintain fairness and
+avoid over-reliance on extensions.</li>
+</ul>
+<p>Submitting a few hours late is usually not a major issue, as long as
+I receive your work before I begin marking and providing feedback. An
+extension is not required in such cases. Extensions for in-class
+assignments –such as worksheets or activities– will only be granted if I
+decide to extend the deadline for the entire class.</p>
+</div>
+<div id="late-assignments" class="section level3">
+<h3>Late Assignments</h3>
+<p>You are expected to turn in all completed assignments on time.
+Circumstances that may disallow you to turn in your work on time –such
+as a medical reason– are understandable. Please let me know if you have
+missed the deadline way beyond its original posted date without prior
+communication regarding extensions. Because every assignment is an
+important aspect of your learning in this class, we will discuss when
+you will turn in the assignment as well as decide upon an acceptable
+consequence for your turning it in late. I am committed to successfully
+helping you learn from this course.</p>
+</div>
+<div id="withdrawal-procedures" class="section level3">
+<h3>Withdrawal Procedures</h3>
+<p>It is the student’s responsibility to drop the course if he or she is
+no longer planning on attending the course or filling the other course
+requirements. In order to drop, the student must use and Add/Drop form
+available at the Registration Office. If a student does not properly
+withdraw from a course, he or she may receive an <strong>F</strong> for
+the course. A properly withdrawn student will receive a
+<strong>W</strong>. The last day to withdraw is <strong>Monday, November
+24th</strong>.</p>
+</div>
+<div id="appointment-cancellations" class="section level3">
+<h3>Appointment Cancellations</h3>
+<p>Please try to show-up to your scheduled appointments. You can cancel
+your appointments, but it is strongly recommended that you cancel 24
+hours before your scheduled time so that other students can schedule
+when a spot opens. You can reschedule for a different day and time if
+you need to. If you have extenuating circumstances, please let me know
+as soon as possible to discuss next steps.</p>
+</div>
+<div id="attendance-and-participation" class="section level3">
+<h3>Attendance and Participation</h3>
+<p>Attendance is not tracked. However, participation is highly
+recommended and often tracked through assignments and general behavior.
+You are expected to actively participate in this class. Participation
+includes coming to class on time, being prepared, being willing to ask
+questions and share ideas, setting up study groups outside of class,
+attending tutoring and help hour sessions, posting helpful resources
+online, and contributing to the discussion channels. Group and
+individual presentation of ideas is a suggested component of
+participation.</p>
+</div>
+<div id="absences" class="section level3">
+<h3>Absences</h3>
+<p>Generally, students are expected to attend all class sessions
+according to the instructor’s direction. Students who feel unwell should
+not attend class in person. These students should inform their
+instructor as soon as possible. Should the instructor need to miss
+class, the course may be temporarily conducted remotely. Should the
+instructor be unable to teach for an extended period of time, the
+respective department or unit will find a substitute to continue the
+course.</p>
+</div>
+<div id="incompletes" class="section level3">
+<h3>Incompletes</h3>
+<p>An incomplete “I” will only be considered when the quality of a
+student’s work is satisfactory (C- or better), but for some essential
+reason the course has not been completed by the student. An “I” is
+reserved for emergency situations only. To request an incomplete, the
+student must submit a typed, signed and dated letter stating the
+reason(s) why an incomplete is appropriate. The letter should also
+contain the conditions for the completion of work. Acceptance of the
+request shall be at the discretion of the instructor, Department Chair,
+and/or Dean of the College of Arts &amp; Sciences.</p>
+</div>
+<div id="accessibility-statement" class="section level3">
+<h3>Accessibility Statement<span class="math inline">\(^*\)</span></h3>
+<p>The University of Portland strives to make its courses and services
+fully accessible to all students. Students are encouraged to discuss
+with their instructors what might be most helpful in enabling them to
+meet the learning goals of the course. Students who experience a
+disability are encouraged to use the services of the Office for
+Accessible Education Services (AES), located in the Shepard Academic
+Resource Center (503-943-8985). <strong>If you have an AES Accommodation
+Plan</strong>, you should meet with your instructor to discuss how to
+implement your plan in this class. Requests for alternate location for
+exams and/or extended exam time should, where possible, be made two
+weeks in advance of an exam, and must be made at least one week in
+advance of an exam. Also, if applicable, you should meet with your
+instructor to discuss emergency medical information or how best to
+ensure your safe evacuation from the building in case of fire or other
+emergency. All information that students provide regarding disability or
+accommodation is confidential. All students are responsible for
+completing the required coursework and are held to the same evaluation
+standards specified in the course syllabus.</p>
+</div>
+<div id="mental-health-statement" class="section level3">
+<h3>Mental Health Statement<span class="math inline">\(^*\)</span></h3>
+<p>Anyone can experience problems with their mental health that
+interfere with academic experiences and negatively impact daily life. If
+you or someone you know experiences mental health challenges at UP,
+please contact the University of Portland Counseling Center (<a
+href="https://www.up.edu/counseling/"
+target="_Blank">https://www.up.edu/counseling/</a>) in the upper level
+of Orrico Hall (down the hill from Franz Hall and near Mehling Hall) at
+503-943-7134 or <a href="mailto:hcc@up.edu"
+class="email">hcc@up.edu</a>. Their services are free and confidential.
+In addition, mental health consultation and support is available through
+the Pilot Helpline by calling 503-943-7134 and pressing 3. All UP
+students also have access to teletherapy through BetterMynd. The
+University of Portland Campus Safety Department (503-943-4444) also has
+personnel trained to respond sensitively to mental health emergencies at
+all hours. Remember that getting help is a smart and courageous thing to
+do – for yourself, for those you care about, and for those who care
+about you. For more information on health and wellness resources at UP
+go to <a href="www.linktr.ee/wellnessUP"
+target="_Blank">www.linktr.ee/wellnessUP</a>.</p>
+</div>
+<div id="non-violence-statement" class="section level3">
+<h3>Non-Violence Statement<span class="math inline">\(^*\)</span></h3>
+<p>The University of Portland is committed to fostering a safe and
+respectful community free from all forms of violence. Violence of any
+kind, and in particular acts of power-based personal violence, are
+inconsistent with our mission. Together, all UP community members must
+take a stand against violence. Learn more about what interpersonal
+violence looks like, campus and community resources, UP’s prevention
+strategy, and what we as individuals can do to assist on the Green Dot
+website, <a href="https://www.up.edu/greendot"
+target="_blank">www.up.edu/greendot</a>. Further information and
+reporting options may be found on the Title IX website, <a
+href="https://www.up.edu/titleix"
+target="_blank">www.up.edu/titleix</a>.</p>
+<p><br></p>
+</div>
+</div>
+</div>
+<div id="materials" class="section level1">
+<h1>Materials</h1>
+<blockquote>
+<p>You are required to read the materials, and are strongly encouraged
+to actively participate in class discussions and complete the
+assignments efficiently to deepen your understanding and succeed in the
+course.</p>
+</blockquote>
+<div id="class-readings" class="section level2">
+<h2>Class Readings</h2>
+<p>The “Read” column in the table below contains page numbers (Pg.) or
+chapters (ch.) on which it refers to a label in the Books &amp; Online
+Resources List. For example “Ch. One I.1 <span
+class="citation">[1]</span>” refers to Chapter One section I.1 of the
+textbook titled <em>Linear Algebra</em>.</p>
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left"><strong>Topic</strong></th>
+<th align="left"><strong>Read</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Orientation and Linear Systems</td>
+<td align="left">Ch. One I <span class="citation">[1]</span></td>
+</tr>
+<tr class="even">
+<td align="left">Gauss’s Method</td>
+<td align="left">Ch. One I.1 <span class="citation">[1]</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Solution Sets</td>
+<td align="left">Ch. One I.2-I.3 <span class="citation">[1]</span></td>
+</tr>
+<tr class="even">
+<td align="left">Echelon Form</td>
+<td align="left">Ch. One III <span class="citation">[1]</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Row Reduction</td>
+<td align="left">Ch. One III.1 <span class="citation">[1]</span></td>
+</tr>
+<tr class="even">
+<td align="left">Linear Combination</td>
+<td align="left">Ch. One III.2 <span class="citation">[1]</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Vectors</td>
+<td align="left">Ch. One II.1-11.2 &amp; Ch. Two I-I.1 <span
+class="citation">[1]</span></td>
+</tr>
+<tr class="even">
+<td align="left">Subspace and Span</td>
+<td align="left">Ch. Two I.2 <span class="citation">[1]</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Linear Independence</td>
+<td align="left">Ch. Two II-II.1 <span class="citation">[1]</span></td>
+</tr>
+<tr class="even">
+<td align="left">Basis</td>
+<td align="left">Ch. Two III-III.1 <span
+class="citation">[1]</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Dimension</td>
+<td align="left">Ch. Two III.2 <span class="citation">[1]</span></td>
+</tr>
+<tr class="even">
+<td align="left">Vector Space</td>
+<td align="left">Ch. Two III.3 <span class="citation">[1]</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Isomorphisms</td>
+<td align="left">Ch. Three I-I.1 <span class="citation">[1]</span></td>
+</tr>
+<tr class="even">
+<td align="left">Characteristics</td>
+<td align="left">Ch. Three I.2 <span class="citation">[1]</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Homomorphisms</td>
+<td align="left">Ch. Three II-II.1 <span
+class="citation">[1]</span></td>
+</tr>
+<tr class="even">
+<td align="left">Null Space and Column Space</td>
+<td align="left">Ch. Three II.2 <span class="citation">[1]</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Linear Maps</td>
+<td align="left">Ch. Three III-III.1 <span
+class="citation">[1]</span></td>
+</tr>
+<tr class="even">
+<td align="left">Matrices</td>
+<td align="left">Ch. Three III.2 <span class="citation">[1]</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Matrix Sums and Scalar Products</td>
+<td align="left">Ch. Three IV-IV.1 <span
+class="citation">[1]</span></td>
+</tr>
+<tr class="even">
+<td align="left">Matrix Multiplication</td>
+<td align="left">Ch. Three IV.2-IV.3 <span
+class="citation">[1]</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Matrix Inverse</td>
+<td align="left">Ch. Three IV.4 <span class="citation">[1]</span></td>
+</tr>
+<tr class="even">
+<td align="left">Change of Basis</td>
+<td align="left">Ch. Three V-V.2 <span class="citation">[1]</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Projection</td>
+<td align="left">Ch. Three VI-IV-3 <span
+class="citation">[1]</span></td>
+</tr>
+<tr class="even">
+<td align="left">Determinants</td>
+<td align="left">Ch. Four I &amp; I.2 <span
+class="citation">[1]</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Properties of Determinants</td>
+<td align="left">Ch. Four I.3 &amp; Ch. Four II-II.1 <span
+class="citation">[1]</span></td>
+</tr>
+<tr class="even">
+<td align="left">Similarity</td>
+<td align="left">Ch. Five II-II.1 <span class="citation">[1]</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Diagonalizability</td>
+<td align="left">Ch. Five II.2 <span class="citation">[1]</span></td>
+</tr>
+<tr class="even">
+<td align="left">Eigentheory</td>
+<td align="left">Ch. Five II.3 <span class="citation">[1]</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Eigenvalues and Eigenvectors</td>
+<td align="left">-</td>
+</tr>
+<tr class="even">
+<td align="left">Eigendecomposition</td>
+<td align="left">-</td>
+</tr>
+<tr class="odd">
+<td align="left">Row Space and Left Null Space</td>
+<td align="left">-</td>
+</tr>
+<tr class="even">
+<td align="left">Four Fundamental Subspaces of Linear Algebra</td>
+<td align="left">-</td>
+</tr>
+<tr class="odd">
+<td align="left">Linear Least Squares</td>
+<td align="left">-</td>
+</tr>
+<tr class="even">
+<td align="left">Singular Value Decomposition</td>
+<td align="left">-</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="books-online-resources-lists" class="section level2">
+<h2>Books &amp; Online Resources Lists</h2>
+<div id="refs" class="references csl-bib-body" entry-spacing="0">
+<div id="ref-hefferon2022openintro" class="csl-entry">
+<div class="csl-left-margin">1. </div><div
+class="csl-right-inline">Hefferon J (2022) <a
+href="https://hefferon.net/linearalgebra/">Linear algebra</a>,
+OpenIntro.</div>
+</div>
+<div id="ref-iola2013" class="csl-entry">
+<div class="csl-left-margin">2. </div><div
+class="csl-right-inline">Wawro M, Zandieh M, Rasmussen C, et al. (2013)
+<a href="http://iola.math.vt.edu">Inquiry oriented linear algebra:
+Course materials</a>.</div>
+</div>
+<div id="ref-strang2022introduction" class="csl-entry">
+<div class="csl-left-margin">3. </div><div
+class="csl-right-inline">Strang G (2022) Introduction to linear algebra,
+Wellesley-Cambridge Press.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+   
+   
+            
+      
+
+  <script>
+    $(document).ready(function () {
+
+			
+ 		
+	    });
+  </script>
+
+
+
+    <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+	var script = document.createElement("script");
+	script.type = "text/javascript";
+	script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+	document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+  
+</body>
+</html>
