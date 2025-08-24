@@ -62,7 +62,7 @@ refs <- bibtex::read.bib("references.bib")
 
 The syllabus, tentative topics schedule, and other information are posted on the course website.
 
-> You can access the course website at [mth-341a-fa25](){target="_blank"}.
+> You can access the course website at [mth-341a-fa25](https://upmathematics.github.io/mth-341a-fa25/){target="_blank"}.
 
 Note that this website can also be viewed in Teams.
 
@@ -72,7 +72,7 @@ We will be using Teams as the main real-time communication tool for general anno
 
 I recommend that you install the Teams software on your own machine for easy and stable access, instead of accessing Teams on the browser.
 
-> The Teams for this course is [MTH-341A-fa25](){target="_blank"}. 
+> The Teams for this course is [MTH-341A-fa25](https://teams.microsoft.com/l/team/19%3ADNLeHThSf-JqOJXzOW7dQOJpGkFr5YJwq5q25hMsHDA1%40thread.tacv2/conversations?groupId=16380335-5c1f-4cf2-b071-19951249f6a4&tenantId=ea8f3949-231c-40b6-a33f-56873af96f87){target="_blank"}. 
 
 Note that this course website and textbook can be accessed in Teams.
 
@@ -128,29 +128,55 @@ Mathematica software is installed on every machine in the UP computer labs.
 
 ### Description
 
-This course delves into the practical applications of linear algebra across various disciplines. Students will explore fundamental concepts such as systems of linear equations, matrices, determinants, vector spaces, linear transformations, eigenvalues, and eigenvectors. Additionally, the course covers basic numerical algorithms for matrix computations. The course goes beyond theoretical foundations to address real-world challenges in applied mathematics, engineering, physics, biology, or other scientific disciplines. Through an applied approach, students will develop a comprehensive understanding of how linear algebra plays a crucial role in solving complex problems and optimizing processes across diverse fields. Emphasis will be placed on practical problem-solving, encouraging students to apply theoretical knowledge to real-world scenarios. This course equips students with valuable skills applicable to a broad spectrum of industries and research areas, fostering a multidisciplinary perspective.
+This course introduces students to the foundational concepts of linear algebra, including systems of equations, matrices, vector spaces, and linear transformations. Emphasis is placed on solving linear systems using analytical and computational methods, visualizing linear systems, and applying linear algebra to physical systems. Students will develop skills in mathematical communication, teamwork, and the effective use of technology, preparing them to tackle problems across disciplines.
 
 ### Learning Outcomes
 
 Upon completion of the course, you will be able to:
 
-* Demonstrate proficiency in working with vector space and projections in both two and three-dimensional spaces.
-* Display mastery in matrix-vector operations, transformations, and factorizations.
-* Understand, represent, and solve physical systems using systems of linear equations and matrix-vector equations.
-* Exhibit skill in using basic numerical algorithms for matrix-vector computations.
-* Apply linear algebra concepts in data probability and statistics, engineering, and computer science.
+* Understand the basic structures of linear systems.
+* Understand the solution types of linear systems.
+* Solve linear systems using a variety of analytical methods.
+* Evaluate and visualize the properties of vectors and matrices.
+* Evaluate and visualize linear transformations and projections.
+* Use numerical methods to solve linear systems.
+* Apply linear algebra to solve physical systems.
 * Write clear and concise mathematical solutions to linear algebra problems.
-* Communicate effectively about linear algebra with other students, instructors, and professionals.
+* Communicate effectively about linear systems with other students, instructors, and professionals.
 * Work independently and as part of a team to solve linear algebra problems.
+* Effectively use technology to support the analysis and solution of linear systems.
 
 ### Learning Objectives
 
 The following learning objectives are designed to build on one another, with some overlap. The goal is to help you achieve proficiency in these areas.
   
-* Perform basic matrix-vector operations which includes addition, subtraction, multiplication, inversion, and norms.
-* Solve systems of linear equations representing physical systems using methods such as row reduction, and matrix inversion.
-* Compute and work with eigenvalues and eigenvectors to explain linear transformations of matrices.
-* Implement basic numerical algorithms for matrix-vector computations.
+| **Topic Category** | **Learning Objectives** |
+|:---|:---------|
+| **Linear Systems** | Compute the solution set for a system of linear equations (or vector or matrix equation) in order to characterize the system. |
+|  | Translate between a system of linear equations, a vector equation, a matrix equation, and an augmented matrix. |
+|  | Explain why a matrix isn’t in reduced row echelon form (RREF) and use the row reduction algorithm to put a matrix in RREF. |
+|  | Express the solution set for a linear system in parametric vector form and interpret this geometrically, distinguishing between homogeneous and nonhomogeneous systems. |
+| **Matrix Algebra** | Perform basic algebraic operations on vectors and matrices using standard notation. |
+|  | Determine when a square matrix is invertible, compute its inverse, and use the inverse to solve linear systems. |
+| **Linear Transformations** | Translate between a linear transformation of Euclidean spaces and its standard matrix and perform related computations. |
+|  | Determine whether or not a map between vector spaces is linear. |
+|  | Represent a composition of linear transformations in terms of appropriate matrix operations. |
+|  | Determine when transformations are one-to-one or onto. |
+|  | Find a basis for the kernel and image of a linear transformation and verify the rank-nullity theorem holds for a given map |
+| **Vector Spaces** | Characterize sets of vectors as linearly independent or dependent, using definitions, vector equations, and calculations as justification. |
+|  | Characterize spans, using definitions, vector equations, and calculations as justification.
+|  | Verify that a given set with vector addition and scalar multiplication specified satisfies the axioms for a vector space or explain why a such a set fails to be a vector space. |
+|  | Determine whether a given subset of a vector space is a subspace. |
+|  | Explain why a set of vectors is or is not a basis for a vector space or subspace and use this to determine dimension. |
+| **Eigentheory** | Identify the eigenvalues and eigenvectors for a given matrix or transformation. |
+|  | Find a basis for the eigenspace associated to a given eigenvalue of a matrix. |
+|  | Diagonalize a matrix or explain why it is impossible to do so using eigentheory. |
+| **Model Physical Systems** | Use linear systems to represent physical mechanics. |
+|  | Solve a linear system to balance a chemical equation and solve RLC circuits. |
+|  | Use linear algebra to solve linear least-squares regression. |
+|  | Use linear algebra for network analysis. |
+| **Use Technology** | Understand the basics of using Python for Linear Algebra. |
+|  | Use Python to analyze, visualize, and solve linear systems. |
 
 <br>
 
@@ -200,7 +226,7 @@ The following learning objectives are designed to build on one another, with som
 | **14** | M 11/24 | _Review_ |
 |  | W 11/26 | **Exam 3** |
 |  | F 11/28 | _Thanksgiving Vacation_ |
-| **15** | M 12/1 | Linear Least Squares |
+| **15** | M 12/1 | Proper Orthogonal Decomposition |
 |  | W 12/3 | Singular Value Decomposition |
 |  | F 12/5 | _Review_ |
 | **16** | Tu 12/9 | **Final Exam Section A (8:00 AM - 10:00 AM)** |
@@ -559,7 +585,7 @@ The "Read" column in the table below contains page numbers (Pg.) or chapters (ch
 | Eigendecomposition | - |
 | Row Space and Left Null Space | - |
 | Four Fundamental Subspaces of Linear Algebra | - |
-| Linear Least Squares | - |
+| Proper Orthogonal Decomposition | - |
 | Singular Value Decomposition | - |
 
 ## Books \& Online Resources Lists
