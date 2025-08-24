@@ -128,7 +128,7 @@ Mathematica software is installed on every machine in the UP computer labs.
 
 ### Description
 
-This course provides a rigorous introduction to the core principles of linear algebra, including systems of linear equations, matrix operations, vector spaces, and linear transformations. Emphasis is placed on both analytical and computational techniques for solving linear systems, as well as geometric intuition and visualization. Applications to physical and theoretical systems are explored to highlight the relevance of linear algebra across disciplines such as physics, engineering, computer science, and statistics. Students will also strengthen their mathematical communication skills, collaborate effectively in teams, and utilize technological tools to model and solve complex problems.
+This course provides an introduction to the core principles of linear algebra, including systems of linear equations, matrix operations, vector spaces, and linear transformations. Emphasis is placed on both analytical and computational techniques for solving linear systems, as well as geometric intuition and visualization. Applications to physical systems are explored to highlight the relevance of linear algebra across disciplines.
 
 ### Learning Outcomes
 
