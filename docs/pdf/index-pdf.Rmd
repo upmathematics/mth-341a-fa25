@@ -1,20 +1,26 @@
 ---
-title: "MTH 341: Introduction to Linear Algebra"
+title: | 
+  \vspace{-1in}
+  | MTH 341: Introduction to Linear Algebra
+  | Syllabus
 subtitle: | 
-  | Section A
-  | Fall 2025
-  | Department of Mathematics
-  | University of Portland
-author: | 
-  | Dr. [Alex John Quijano](https://www.alexjohnquijano.com){target='_blank'} [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/){target='_blank'}
-  | Department of Mathematics
-  | University of Portland
-  | 
-  | Made with [R](https://cran.r-project.org/){target='_blank'} and [RMarkdown](https://rmarkdown.rstudio.com/){target='_blank'}
-  | Last updated on `r format(Sys.Date(), format='%B %d, %Y')`
-bibliography: references.bib
-csl: mbe.csl
-nocite: '@*'
+  | Section A | Fall 2025 | Department of Mathematics | University of Portland
+header-includes: |
+  \usepackage{fancyhdr}
+  \pagestyle{fancy}
+  \fancyhead[RO,R]{MTH 341A ILA - Syllabus}
+  \fancyfoot[CO,C]{}
+  \fancyfoot[R]{\thepage}
+  \usepackage{float}
+output:
+  bookdown::pdf_document2:
+    toc: no
+    number_section: no
+urlcolor: blue
+bibliography: ../references.bib
+csl: ../mbe.csl
+geometry: "left=0.50in,right=0.50in,top=0.75in,bottom=0.75in"
+fontsize: 12pt
 ---
 
 ```{r setup, include=FALSE}
@@ -48,7 +54,7 @@ This course meets on Mondays, Wednesdays, and Fridays. Homework will be schedule
 This course uses the following textbook --which is free to access-- for reading and practice.
 
 ```{r echo=FALSE}
-refs <- bibtex::read.bib("references.bib")
+refs <- bibtex::read.bib("../references.bib")
 ```
 
 >  * `r capture.output(print(refs["hefferon2022openintro"]))`
@@ -542,53 +548,3 @@ Anyone can experience problems with their mental health that interfere with acad
 The University of Portland is committed to fostering a safe and respectful community free from all forms of violence. Violence of any kind, and in particular acts of power-based personal violence, are inconsistent with our mission. Together, all UP community members must take a stand against violence. Learn more about what interpersonal violence looks like, campus and community resources, UP’s prevention strategy, and what we as individuals can do to assist on the Green Dot website, [www.up.edu/greendot](https://www.up.edu/greendot){target="_blank"}. Further information and reporting options may be found on the Title IX website, [www.up.edu/titleix](https://www.up.edu/titleix){target="_blank"}.
 
 <br>
-
-# Materials
-
-> You are required to read the materials, and are strongly encouraged to actively participate in class discussions and complete the assignments efficiently to deepen your understanding and succeed in the course.
-
-## Class Readings
-
-The "Read" column in the table below contains page numbers (Pg.) or chapters (ch.) on which it refers to a label in the Books \& Online Resources List. For example "Ch. One I.1 @hefferon2022openintro" refers to Chapter One section I.1 of the textbook titled *Linear Algebra*.
-
-| **Topic** | **Read** |
-|:---|:---|
-| Orientation and Linear Systems | Ch. One I @hefferon2022openintro |
-| Gauss's Method | Ch. One I.1 @hefferon2022openintro |
-| Solution Sets | Ch. One I.2-I.3 @hefferon2022openintro |
-| Echelon Form | Ch. One III @hefferon2022openintro |
-| Row Reduction | Ch. One III.1 @hefferon2022openintro |
-| Linear Combination | Ch. One III.2 @hefferon2022openintro |
-| Vectors | Ch. One II.1-11.2 \& Ch. Two I-I.1 @hefferon2022openintro |
-| Subspace and Span | Ch. Two I.2 @hefferon2022openintro |
-| Linear Independence | Ch. Two II-II.1 @hefferon2022openintro |
-| Basis | Ch. Two III-III.1 @hefferon2022openintro |
-| Dimension | Ch. Two III.2 @hefferon2022openintro |
-| Vector Space | Ch. Two III.3 @hefferon2022openintro |
-| Isomorphisms | Ch. Three I-I.1 @hefferon2022openintro |
-| Characteristics | Ch. Three I.2 @hefferon2022openintro |
-| Homomorphisms | Ch. Three II-II.1 @hefferon2022openintro |
-| Null Space and Column Space | Ch. Three II.2 @hefferon2022openintro |
-| Linear Maps | Ch. Three III-III.1 @hefferon2022openintro |
-| Matrices | Ch. Three III.2 @hefferon2022openintro |
-| Matrix Sums and Scalar Products | Ch. Three IV-IV.1 @hefferon2022openintro |
-| Matrix Multiplication | Ch. Three IV.2-IV.3 @hefferon2022openintro |
-| Matrix Inverse | Ch. Three IV.4 @hefferon2022openintro |
-| Change of Basis | Ch. Three V-V.2 @hefferon2022openintro |
-| Projection | Ch. Three VI-IV-3 @hefferon2022openintro |
-| Determinants | Ch. Four I \& I.2 @hefferon2022openintro |
-| Properties of Determinants | Ch. Four I.3 \& Ch. Four II-II.1 @hefferon2022openintro |
-| Similarity | Ch. Five II-II.1 @hefferon2022openintro |
-| Diagonalizability | Ch. Five II.2 @hefferon2022openintro |
-| Eigentheory | Ch. Five II.3 @hefferon2022openintro |
-| Eigenvalues and Eigenvectors | - |
-| Eigendecomposition | - |
-| Row Space and Left Null Space | - |
-| Four Fundamental Subspaces of Linear Algebra | - |
-| Proper Orthogonal Decomposition | - |
-| Singular Value Decomposition | - |
-
-## Books \& Online Resources Lists
-
-::: {#refs}
-:::
