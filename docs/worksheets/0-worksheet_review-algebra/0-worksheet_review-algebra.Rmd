@@ -1,0 +1,85 @@
+---
+header-includes: |
+  \usepackage{fancyhdr}
+  \pagestyle{fancy}
+  \fancyhead[LO,L]{\textbf{MTH-341 A} | Spring 2025}
+  \fancyhead[RO,R]{\textbf{Worksheet 0} | Pg. \thepage}
+  \fancyfoot[CO,C]{}
+  \usepackage{float}
+  \usepackage{multirow}
+output:
+  bookdown::pdf_document2:
+    toc: no
+    number_section: no
+urlcolor: blue
+link-citations: yes
+bibliography: ../../../references.bib
+csl: ../../../mbe.csl
+geometry: "left=0.50in,right=0.50in,top=0.75in,bottom=0.75in"
+fontsize: 12pt
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+**Name:**
+
+**Collaborators:**
+
+\noindent\rule{\textwidth}{1pt}
+**Instructions:** Worksheets are graded mostly on completion, and partially on correctness. Please write complete solutions showing explanations and key steps to the following problems, unless it says otherwise.
+\noindent\rule{\textwidth}{1pt}
+
+## Review Algebra
+
+### 1. Linear Systems of Two Variables
+
+For the following systems of two equations, use the Method of Substitution to find the solution or to determine if the system is inconsistent or dependent.
+
+a. $\begin{aligned}
+    2x +  y & = 10 \\
+    3x - 2y & = 5
+    \end{aligned}$
+\vfill
+b. $\begin{aligned}
+    x - 3y & = 7 \\
+    -2x + 6y & = 4
+    \end{aligned}$
+\vfill
+
+### 2. Roots of Polynomials
+  
+For the following functions, list all of the zeros of the polynomial and give their multiplicities.
+
+a. $f(x) = x^2 + 2x - 120$
+\vfill
+b. $g(x) = 4x^3 + x^2 - 3x$
+\vfill
+c. $h(x) = (x-1)^2 (x+8) (x-2)$
+\vfill
+
+\newpage
+
+### 3. Partial Fractions
+
+Express the rational function $\displaystyle f(x) = \frac{2x^3 + 3x^2 + 4x + 5}{(x-1)^2 (x^2 + 1)}$ as a sum of partial fractions.
+\vfill
+
+### 4. Long Division
+
+Use the method of long division to perform the indicated division.
+
+a. Divide $8x^4 + x^3 - 3x^2 + 1$ by $x^2 - 2$.
+\vfill
+b. Divide $8x^3 - 4x + 1$ by $x+6$.
+\vfill
+
+<!-- \newpage
+
+## **References**
+
+::: {#refs}
+:::
+
+<br> -->

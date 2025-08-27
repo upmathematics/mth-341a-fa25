@@ -33,7 +33,6 @@ This course provides an introduction to the core principles of linear algebra, i
 
 > * Instructor: Dr. Alex John Quijano
 > * Office: Buckley Center 279
-> * Email: quijano@up.edu
 
 ### Lectures and Discussions
 
