@@ -1,0 +1,71 @@
+---
+header-includes: |
+  \usepackage{fancyhdr}
+  \pagestyle{fancy}
+  \fancyhead[LO,L]{\textbf{MTH-341 A} | Spring 2025}
+  \fancyhead[RO,R]{\textbf{Worksheet 7} | Pg. \thepage}
+  \fancyfoot[CO,C]{}
+  \usepackage{float}
+  \usepackage{multirow}
+output:
+  bookdown::pdf_document2:
+    toc: no
+    number_section: no
+urlcolor: blue
+link-citations: yes
+bibliography: ../../../references.bib
+csl: ../../../mbe.csl
+geometry: "left=0.50in,right=0.50in,top=0.75in,bottom=0.75in"
+fontsize: 12pt
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+**Name:**
+
+**Collaborators:**
+
+\noindent\rule{\textwidth}{1pt}
+**Instructions:** Worksheets are graded mostly on completion, and partially on correctness. Please write complete solutions showing explanations and key steps to the following problems, unless it says otherwise.
+\noindent\rule{\textwidth}{1pt}
+
+## Exploring Spans and Subspaces
+
+### 1. Intersecting Planes in Three Dimensions
+
+The system $\displaystyle \begin{aligned} x + y + z & = 1 \\ x + y & = 2 \end{aligned}$ has a solution set $S$.
+
+a. Show $\displaystyle S = \left\{\begin{bmatrix} 2 \\ 0 \\ -1 \end{bmatrix} + t\begin{bmatrix} -1 \\ 1 \\ 0 \end{bmatrix}: t \in \mathbb{R}\right\}$.
+\vfill
+b. Find the subspace parallel to $S$ and give a basis and its dimension.
+\vfill
+c. Provide an description on how the intersection of the two planes look like in $\mathbb{R}^3$ and the basis.
+\vfill
+d. Is $S$ a subspace of $\mathbb{R}^3$?
+\vfill
+
+\newpage
+
+### 2. Intersecting Hyperplanes in Four Dimensions
+
+The system $\displaystyle \begin{aligned} x_1 - 2x_2 + x_3 + x_4 & = -1 \\ x_1 - x_2 + 2x_3 - x_4 & = 1 \end{aligned}$ has a solution set $S$.
+
+a. Show $\displaystyle S = \left\{\begin{bmatrix} 3 \\ 2 \\ 0 \\ 0 \end{bmatrix} + s\begin{bmatrix} -3 \\ -1 \\ 1 \\ 0 \end{bmatrix} + t\begin{bmatrix} 3 \\ 2 \\ 0 \\ 1 \end{bmatrix}: s, t \in \mathbb{R}\right\}$.
+\vfill
+b. Give a basis and the dimension of the subspace parallel to $S$.
+\vfill
+c. Provide an description on how the intersection of the two planes look like in $\mathbb{R}^4$ and the basis.
+\vfill
+d. Decide whether $S$ is a subspace of $\mathbb{R}^4$.
+\vfill
+
+<!-- \newpage
+
+## **References**
+
+::: {#refs}
+:::
+
+<br> -->

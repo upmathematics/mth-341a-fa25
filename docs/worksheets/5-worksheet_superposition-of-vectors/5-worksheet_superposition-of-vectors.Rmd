@@ -1,0 +1,83 @@
+---
+header-includes: |
+  \usepackage{fancyhdr}
+  \pagestyle{fancy}
+  \fancyhead[LO,L]{\textbf{MTH-341 A} | Spring 2025}
+  \fancyhead[RO,R]{\textbf{Worksheet 5} | Pg. \thepage}
+  \fancyfoot[CO,C]{}
+  \usepackage{float}
+  \usepackage{multirow}
+output:
+  bookdown::pdf_document2:
+    toc: no
+    number_section: no
+urlcolor: blue
+link-citations: yes
+bibliography: ../../../references.bib
+csl: ../../../mbe.csl
+geometry: "left=0.50in,right=0.50in,top=0.75in,bottom=0.75in"
+fontsize: 12pt
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+**Name:**
+
+**Collaborators:**
+
+\noindent\rule{\textwidth}{1pt}
+**Instructions:** Worksheets are graded mostly on completion, and partially on correctness. Please write complete solutions showing explanations and key steps to the following problems, unless it says otherwise.
+\noindent\rule{\textwidth}{1pt}
+
+## Superposition of Vectors
+
+This worksheet has a supplementary Jupyter Notebook (Python) in Posit Cloud. Please log-in into this course's Posit Cloud Workspace and navigate to the appropriate environment.
+
+### 1. Linear Combination
+
+Given vectors $\vec{v}_1$, $\vec{v}_2$, $\cdots$, $\vec{v}_k$ and scalars $c_1$, $c_2$, $\cdots$, $c_k$, a *linear combination* is any vector of the form: $$c_1 \vec{v}_1 + c_2 \vec{v}_2 + \cdots + c_k \vec{v}_k.$$
+
+Let $$\vec{v}_1 = \begin{bmatrix}1 \\ 2 \\ 0\end{bmatrix}, \hspace{10px} \vec{v}_2 = \begin{bmatrix}0 \\ 1 \\ 1\end{bmatrix}, \hspace{10px} \text{ and } \hspace{10px} \vec{v}_3 = \begin{bmatrix}2 \\ -1 \\ 1\end{bmatrix}.$$ Express the vector $\vec{b} = \begin{bmatrix}3 \\ 4 \\ 5\end{bmatrix}$ as linear combination of $\vec{v}_1$, $\vec{v}_2$, and $\vec{v}_3$. That is, find scalars $c_1$, $c_2$, and $c_3$ so that $c_1 \vec{v}_1 + c_2 \vec{v}_2 + c_3 \vec{v}_3 = \vec{b}$.
+
+**Note:** In the Posit Cloud Workspace, open the file `row-reduction.ipynb` under the "Supplementary: Superposition of Vectors" project. Use it to complete the tasks.
+\vfill
+
+\newpage
+
+### 2. Linear Combinations and Solving Linear Systems
+
+Consider the linear system,
+$$
+\begin{aligned}
+ x_1 - x_2 + 2x_3 = 0 \\
+-2x_1 - 3x_2 + x_3 = 1 \\
+-3x_1 + x_2 - 3x_3 = 3 \\
+\end{aligned}
+$$
+
+a. Write the linear system in matrix-vector form. Then, express the augmented matrix in REF and RREF. What does each row in the REF and RREF tell you about the variables?
+\vfill
+
+b. Write the solution $x_1$, $x_2$, and $x_3$ as a vector $\vec{x} = \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix}$. Then, write it as a linear combination of the standard basis vectors. Compare this represntation to the structure of the RREF in Part (a). What do you notice?
+\vfill
+
+c. Given the linear system, set the each equation to zero. Then, write the system as a linear combination. Is $\vec{x} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}$ the only solution? Explain your reasoning.
+\vfill
+
+d. Let $A \vec{x} = \vec{b}$ and $A$ be a square matrix. Based on your observations in Parts (a)-(c):
+
+    i. What seems to determine whether the solution is unique?
+    \vfill
+    ii. Formulate a conjecture connecting the structure of $A$ (and its pivot positions) with the way unique solutions are expressed as linear combinations.
+    \vfill
+
+<!-- \newpage
+
+## **References**
+
+::: {#refs}
+:::
+
+<br> -->

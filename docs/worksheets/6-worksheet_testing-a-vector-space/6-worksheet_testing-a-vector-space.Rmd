@@ -1,0 +1,130 @@
+---
+header-includes: |
+  \usepackage{fancyhdr}
+  \pagestyle{fancy}
+  \fancyhead[LO,L]{\textbf{MTH-341 A} | Spring 2025}
+  \fancyhead[RO,R]{\textbf{Worksheet 6} | Pg. \thepage}
+  \fancyfoot[CO,C]{}
+  \usepackage{float}
+  \usepackage{multirow}
+output:
+  bookdown::pdf_document2:
+    toc: no
+    number_section: no
+urlcolor: blue
+link-citations: yes
+bibliography: ../../../references.bib
+csl: ../../../mbe.csl
+geometry: "left=0.50in,right=0.50in,top=0.75in,bottom=0.75in"
+fontsize: 12pt
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+**Name:**
+
+**Collaborators:**
+
+\noindent\rule{\textwidth}{1pt}
+**Instructions:** Worksheets are graded mostly on completion, and partially on correctness. Please write complete solutions showing explanations and key steps to the following problems, unless it says otherwise.
+\noindent\rule{\textwidth}{1pt}
+
+## Testing a Vector Space
+
+### 1. Vector Space Definition
+
+A *vector space* over $\mathbb{R}$ is a set $V$ with two operations:
+
+* **Vector addition ($+$)**
+* **Scalar multiplication ($\cdot$)**
+
+such that the following properties hold (closure under addition, associativity, commutativity, identities, additive inverses, distributive properties, scalar rules, etc.).
+
+\begin{minipage}[t]{0.49\textwidth}
+\begin{itemize}
+  \item[a.] Let $\vec{u}$, $\vec{v}$, and $\vec{w}$ be vectors in $\mathbb{R}^n$. Identify whether each property belongs to addition, scalar multiplication, or both so that $\vec{u}, \vec{v}, \vec{w} \in V$ and scalars $c,d \in \mathbb{R}$: \vspace{5px}
+    \begin{itemize}
+      \item[(1)] $\vec{u} + \vec{v} \in V$
+      \vspace{20px}
+      \item[(2)] $\vec{u} + \vec{v} = \vec{v} + \vec{u}$
+      \vspace{20px}
+      \item[(3)] $(\vec{v} + \vec{w}) + \vec{u} = \vec{v} + (\vec{w} + \vec{u})$
+      \vspace{20px}
+      \item[(4)] $\vec{v} + \vec{0} = \vec{v}$
+      \vspace{20px}
+      \item[(5)] $\vec{v} + (-\vec{v}) = \vec{0}$
+      \vspace{20px}
+      \item[(6)] $c \cdot \vec{v} \in V$
+      \vspace{20px}
+      \item[(7)] $(c + d) \cdot \vec{v} = c \cdot \vec{v} + d \cdot \vec{v}$
+      \vspace{20px}
+      \item[(8)] $c \cdot (\vec{v} + \vec{w}) = c \cdot \vec{v} + c \cdot \vec{w}$
+      \vspace{20px}
+      \item[(9)] $(cd) \cdot \vec{v} = c \cdot (s \cdot \vec{v})$
+      \vspace{20px}
+      \item[(10)] $1 \cdot \vec{v} = \vec{v}$
+    \end{itemize}
+\end{itemize}
+\end{minipage}
+\begin{minipage}[t]{0.49\textwidth}
+\begin{itemize}
+  \item[b.] For each case below, decide: Is this a vector space over $\mathbb{R}$? If yes, write a short explanation. If no, give a counterexample showing which property fails.
+    \begin{itemize}
+      \item[i.] $\mathbb{R}^2$ with usual addition and usual scalar multiplication.
+      \vspace{100px}
+      \item[ii.] $\mathbb{R}^2$ with addition defined by $$\begin{bmatrix} x \\ y \end{bmatrix} + \begin{bmatrix} a \\ b \end{bmatrix} = \begin{bmatrix} x+a \\ y+b+1 \end{bmatrix}$$ and usual scalar multiplication.
+      \vspace{100px}
+    \end{itemize}
+\end{itemize}
+\end{minipage}
+
+\newpage
+
+### 2. More Examples and Reflections
+
+a. For each case below, decide: Is this a vector space over $\mathbb{R}$? If yes, write a short explanation. If no, give a counterexample showing which property fails.
+
+\begin{minipage}[t]{0.49\textwidth}
+  \begin{itemize}
+    \item[i.] The set of all polynomials of degree $\le 3$, with usual operations.
+    \vspace{150px}
+  \end{itemize}
+\end{minipage}
+\begin{minipage}[t]{0.49\textwidth}
+  \begin{itemize}
+    \item[ii.] The set of all continuous functions $f: \mathbb{R} \to \mathbb{R}$, with usual operations.
+    \vspace{150px}
+  \end{itemize}
+\end{minipage}
+
+b. Come up with your own example of a set with operations that almost looks like a vector space, but fails one property.
+
+\begin{minipage}[t]{0.49\textwidth}
+  \begin{itemize}
+    \item[i.] Define your set and operations.
+    \vspace{150px}
+  \end{itemize}
+\end{minipage}
+\begin{minipage}[t]{0.49\textwidth}
+  \begin{itemize}
+    \item[ii.] Which property fails?
+    \vspace{150px}
+  \end{itemize}
+\end{minipage}
+
+c. Why does changing just one operation often break the vector space structure?
+\vfill
+
+d. Which examples felt “obviously” vector spaces? Which required careful checking?
+\vfill
+
+<!-- \newpage
+
+## **References**
+
+::: {#refs}
+:::
+
+<br> -->

@@ -553,14 +553,14 @@ The "Read" column in the table below contains page numbers (Pg.) or chapters (ch
 | **Topic** | **Read** |
 |:---|:---|
 | Orientation and Linear Systems | Ch. One I @hefferon2022openintro |
-| Gauss's Method | Ch. One I.1 @hefferon2022openintro |
-| Solution Sets | Ch. One I.2-I.3 @hefferon2022openintro |
-| Echelon Form | Ch. One III @hefferon2022openintro |
-| Row Reduction | Ch. One III.1 @hefferon2022openintro |
-| Linear Combination | Ch. One III.2 @hefferon2022openintro |
-| Vectors | Ch. One II.1-11.2 \& Ch. Two I-I.1 @hefferon2022openintro |
-| Subspace and Span | Ch. Two I.2 @hefferon2022openintro |
-| Linear Independence | Ch. Two II-II.1 @hefferon2022openintro |
+| [Gauss's Method](lecture-notes/gausss-method.pdf) | Ch. One I.1 @hefferon2022openintro |
+| [Solution Sets](lecture-notes/solution-set.pdf) | Ch. One I.2-I.3 @hefferon2022openintro |
+| [Echelon Form](lecture-notes/echelon-form.pdf) | Ch. One III @hefferon2022openintro |
+| [Row Reduction](lecture-notes/row-reduction.pdf) | Ch. One III.1 @hefferon2022openintro |
+| [Linear Combination](lecture-notes/linear-combination.pdf) | Ch. One III.2 @hefferon2022openintro |
+| [Vectors](lecture-notes/vectors.pdf) | Ch. One II.1-11.2 \& Ch. Two I-I.1 @hefferon2022openintro |
+| [Subspace and Span](lecture-notes/subspace-and-span.pdf) | Ch. Two I.2 @hefferon2022openintro |
+| [Linear Independence](lecture-notes/linear-independence.pdf) | Ch. Two II-II.1 @hefferon2022openintro |
 | Basis | Ch. Two III-III.1 @hefferon2022openintro |
 | Dimension | Ch. Two III.2 @hefferon2022openintro |
 | Vector Space | Ch. Two III.3 @hefferon2022openintro |

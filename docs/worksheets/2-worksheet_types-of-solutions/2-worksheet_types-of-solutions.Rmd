@@ -1,0 +1,93 @@
+---
+header-includes: |
+  \usepackage{fancyhdr}
+  \pagestyle{fancy}
+  \fancyhead[LO,L]{\textbf{MTH-341 A} | Spring 2025}
+  \fancyhead[RO,R]{\textbf{Worksheet 2} | Pg. \thepage}
+  \fancyfoot[CO,C]{}
+  \usepackage{float}
+  \usepackage{multirow}
+output:
+  bookdown::pdf_document2:
+    toc: no
+    number_section: no
+urlcolor: blue
+link-citations: yes
+bibliography: ../../../references.bib
+csl: ../../../mbe.csl
+geometry: "left=0.50in,right=0.50in,top=0.75in,bottom=0.75in"
+fontsize: 12pt
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+**Name:**
+
+**Collaborators:**
+
+\noindent\rule{\textwidth}{1pt}
+**Instructions:** Worksheets are graded mostly on completion, and partially on correctness. Please write complete solutions showing explanations and key steps to the following problems, unless it says otherwise.
+\noindent\rule{\textwidth}{1pt}
+
+## Types of Solutions
+
+### 1. Unique Solution
+
+A linear system with a *unique solution* has a solution set with one element.
+
+Use Gaussian elimination to show that the following system has a unique solution (you do not need to apply back substitution):
+$$
+\begin{aligned}
+x + y + z & = 1 \\
+2x + 3y & = 2 \\
+y + z & = 3
+\end{aligned}
+$$
+Show each step clearly, including the operations you apply.
+\vfill
+
+### 2. No Solution
+
+A linear system with *no solution* has a solution set that is empty.
+
+Use Gaussian elimination to show that the following system has no solution:
+$$
+\begin{aligned}
+x + y + z & = 1 \\
+2x + 2y + 2z & = 1 \\
+x - y + z & = 1
+\end{aligned}
+$$
+Show each step clearly, including the operations you apply.
+\vfill
+
+\newpage
+
+### 3. Infinite Solutions
+
+A linear system with *infinite solutions* has a solution set with many elements.
+
+a. Use Gaussian elimination to show that the following system has infinite solutions:
+$$
+\begin{aligned}
+x + 2y - z & = 4 \\
+2x + 4y - 2z & = 8 \\
+3x + 6y - 3z & = 12
+\end{aligned}
+$$
+Show each step clearly, including the operations you apply.
+\vfill
+
+b. Show the solution set in Part (a) in parametric form.
+\vfill
+
+<!-- \newpage
+
+## **References**
+
+::: {#refs}
+:::
+
+<br> -->

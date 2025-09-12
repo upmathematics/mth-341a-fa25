@@ -1,0 +1,68 @@
+---
+header-includes: |
+  \usepackage{fancyhdr}
+  \pagestyle{fancy}
+  \fancyhead[LO,L]{\textbf{MTH-341 A} | Spring 2025}
+  \fancyhead[RO,R]{\textbf{Worksheet 1} | Pg. \thepage}
+  \fancyfoot[CO,C]{}
+  \usepackage{float}
+  \usepackage{multirow}
+output:
+  bookdown::pdf_document2:
+    toc: no
+    number_section: no
+urlcolor: blue
+link-citations: yes
+bibliography: ../../../references.bib
+csl: ../../../mbe.csl
+geometry: "left=0.50in,right=0.50in,top=0.75in,bottom=0.75in"
+fontsize: 12pt
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+**Name:**
+
+**Collaborators:**
+
+\noindent\rule{\textwidth}{1pt}
+**Instructions:** Worksheets are graded mostly on completion, and partially on correctness. Please write complete solutions showing explanations and key steps to the following problems, unless it says otherwise.
+\noindent\rule{\textwidth}{1pt}
+
+## Gaussian Elimination
+
+### 1. Gauss's Method
+
+*Gaussian elimination* is a systematic method for solving systems of linear equations by simplifying the equations step by step. It relies on three key row operations:
+
+* **(1) Swapping two equations**, which helps position a more convenient equation at the top, especially when the leading coefficient is one;
+* **(2) Multiplying an equation by a non-zero constant**, which allows for easier manipulation and normalization of coefficients; and 
+* **(3) Adding or subtracting a multiple of one equation to another**, which is used to eliminate variables and simplify the system.
+
+These rules are applied repeatedly to transform the system into a form where the solution becomes clear through back-substitution.
+
+Use Gauss's method to solve the system of equations:
+$$
+\begin{aligned}
+2x - y + 3z & = 1 \\
+-x + 4y + z & = 2 \\
+x + y + z & = 0
+\end{aligned}
+$$
+Show each step clearly, including the operations you apply.
+\vfill
+
+\newpage
+
+*This page is intentionally left blank.*
+
+<!-- \newpage
+
+## **References**
+
+::: {#refs}
+:::
+
+<br> -->
