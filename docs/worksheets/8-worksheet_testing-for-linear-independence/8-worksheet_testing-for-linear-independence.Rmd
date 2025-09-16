@@ -54,7 +54,7 @@ b. $\displaystyle \left\{ \begin{bmatrix} 1 \\ 1 \\ 8 \end{bmatrix}, \begin{bmat
 
 ### 2. A Questionable Basis
 
-A set that is both spanning and linearly independent forms a *basis* of the vector space $V$: $\text{Span}\left(\{\vec{v}_1, \vec{v}_2, \cdots \vec{v}_k\}\right) = V$ and $\{\vec{v}_1, \vec{v}_2, \cdots \vec{v}_k\}$ is linearly independent.
+A set that is both spanning and linearly independent forms a *basis* of the vector space $V$: $\text{Span}\left(\{\vec{v}_1, \vec{v}_2, \cdots \vec{v}_k\}\right) \in V$ and $\{\vec{v}_1, \vec{v}_2, \cdots \vec{v}_k\}$ is linearly independent.
 
 Consider the set of vectors $$S = \left\{ \begin{bmatrix} 1 \\ 1 \\ 0 \end{bmatrix}, \begin{bmatrix} 0 \\ 1 \\ 1 \end{bmatrix}, \begin{bmatrix} 2 \\ 1 \\ -1 \end{bmatrix} \right\}.$$
 

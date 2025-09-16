@@ -113,17 +113,7 @@ If you'd like to set up Python on your own computer, start by installing [Python
 
 > Python instructions and materials will be provided ad hoc.
 
-### Wolfram
-
-We will be using Wolfram Mathematica and Alpha as a tool for numerical and symbolic computations for some assignments. 
-
-* [*Wolfram Mathematica*](https://www.wolfram.com/mathematica/){target="_blank"} is a powerful computational software system that combines numerical capabilities, and it can solve equations symbolically.
-
-* [*Wolfram Alpha*](https://www.wolframalpha.com/){target="_blank"} is a computational search engine that can solve mathematical equations of varying complexity.
-
-Mathematica software is installed on every machine in the UP computer labs.
-
-> Wolfram Mathematica and Alpha instructions and materials will be provided ad hoc.
+*Amendment 1: The subsection "Wolfram" was removed.*
 
 <br>
 
@@ -365,7 +355,9 @@ Here are the qualifications and requirements for homework revisions:
 Here are the rules for homework revisions:
 
   * Homework revisions are accepted within one week of the homework being returned to you, otherwise the grade is set.
-  * You can revised your homework multiple times as long as it is not marked as "M".
+  * You have one chance to revise your homework.
+
+*Amendment 2: The rule "You can revised your homework multiple times as long as it is not marked as "M"." was changed to "You have one chance to revise your homework."*
 
 ### Exams
 
@@ -431,6 +423,9 @@ Here are the rules for exam retakes:
   * Exam retakes must be done within one week of the exam being returned to you, otherwise the grade is set.
   * If you need to retake an exam more than one week of the exam being returned to you, let me know for a discussion.
   * The same written and oral exam part rules apply for exam retakes.
+  * You have one chance to retake an exam.
+
+*Amendment 3: The rule "You have one chance to retake an exam." was added.*
 
 > Here is how you can sign-up for the exam (oral part) retakes:
 >
