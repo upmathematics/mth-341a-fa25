@@ -183,10 +183,10 @@ The following learning objectives are designed to build on one another, with som
 |  | W 9/10 | Subspace and Span |
 |  | F 9/12 | Linear Independence |
 | **4** | M 9/15 | Basis |
-|  | W 9/17 | Dimension |
-|  | F 9/19 | Vector Space |
-| **5** | M 9/22 | Isomorphisms |
-|  | W 9/24 | _Review_ |
+|  | W 9/17 | _Review_ |
+|  | F 9/19 | Dimension |
+| **5** | M 9/22 | Vector Space |
+|  | W 9/24 | Isomorphisms |
 |  | Tu 9/23 to F 9/26 | **Exam 1** |
 | **6** | M 9/29 | Characteristics |
 |  | W 10/1 | Homomorphisms |
@@ -197,22 +197,22 @@ The following learning objectives are designed to build on one another, with som
 | **8** | M 10/13 | _Fall Vacation_ |
 |  | W 10/15 | _Fall Vacation_ |
 |  | F 10/17 | _Fall Vacation_ |
-| **9** | M 10/20 | Matrix Multiplication |
-|  | W 10/22 | Matrix Inverse |
-|  | F 10/24 | Change of Basis |
-| **10** | M 10/27 | Projection |
-|  | W 10/29 | _Review_ |
+| **9** | M 10/20 | _Review_ |
+|  | W 10/22 | Matrix Multiplication |
+|  | F 10/24 | Matrix Inverse |
+| **10** | M 10/27 | Change of Basis |
+|  | W 10/29 | Projection |
 |  | Tu 10/28 to F 10/31 | **Exam 2** |
 | **11** | M 11/3 | Determinants |
 |  | W 11/5 | Properties of Determinants |
 |  | F 11/7 | Similarity |
 | **12** | M 11/10 | Diagonalizability |
 |  | W 11/12 | Eigentheory |
-|  | F 11/14 | Eigenvalues and Eigenvectors |
-| **13** | M 11/17 | Eigendecomposition |
-|  | W 11/19 | Row Space and Left Null Space |
-|  | F 11/21 | Four Fundamental Subspaces of Linear Algebra |
-| **14** | M 11/24 | _Review_ |
+|  | F 11/14 | _Review_ |
+| **13** | M 11/17 | Eigenvalues and Eigenvectors |
+|  | W 11/19 | Eigendecomposition |
+|  | F 11/21 | Row Space and Left Null Space |
+| **14** | M 11/24 | Four Fundamental Subspaces of Linear Algebra |
 |  | M 11/24 to W 11/26 | **Exam 3** |
 |  | F 11/28 | _Thanksgiving Vacation_ |
 | **15** | M 12/1 | Proper Orthogonal Decomposition |
