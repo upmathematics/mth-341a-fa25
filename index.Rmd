@@ -556,7 +556,7 @@ The "Read" column in the table below contains page numbers (Pg.) or chapters (ch
 | [Vectors](lecture-notes/vectors.pdf) | Ch. One II.1-11.2 \& Ch. Two I-I.1 @hefferon2022openintro |
 | [Subspace and Span](lecture-notes/subspace-and-span.pdf) | Ch. Two I.2 @hefferon2022openintro |
 | [Linear Independence](lecture-notes/linear-independence.pdf) | Ch. Two II-II.1 @hefferon2022openintro |
-| Basis | Ch. Two III-III.1 @hefferon2022openintro |
+| [Basis](lecture-notes/basis.pdf) | Ch. Two III-III.1 @hefferon2022openintro |
 | Dimension | Ch. Two III.2 @hefferon2022openintro |
 | Vector Space | Ch. Two III.3 @hefferon2022openintro |
 | Isomorphisms | Ch. Three I-I.1 @hefferon2022openintro |
