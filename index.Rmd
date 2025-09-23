@@ -187,7 +187,7 @@ The following learning objectives are designed to build on one another, with som
 |  | F 9/19 | Dimension |
 | **5** | M 9/22 | Vector Space |
 |  | W 9/24 | Isomorphisms |
-|  | Tu 9/23 to F 9/26 | **Exam 1** |
+|  | Tu 9/23 to F 9/26 | **Exam 1** (No class session on F 9/26) |
 | **6** | M 9/29 | Characteristics |
 |  | W 10/1 | Homomorphisms |
 |  | F 10/3 | Null Space and Column Space |
@@ -202,7 +202,7 @@ The following learning objectives are designed to build on one another, with som
 |  | F 10/24 | Matrix Inverse |
 | **10** | M 10/27 | Change of Basis |
 |  | W 10/29 | Projection |
-|  | Tu 10/28 to F 10/31 | **Exam 2** |
+|  | Tu 10/28 to F 10/31 | **Exam 2** (No class session on F 10/31) |
 | **11** | M 11/3 | Determinants |
 |  | W 11/5 | Properties of Determinants |
 |  | F 11/7 | Similarity |
@@ -213,7 +213,7 @@ The following learning objectives are designed to build on one another, with som
 |  | W 11/19 | Eigendecomposition |
 |  | F 11/21 | Row Space and Left Null Space |
 | **14** | M 11/24 | Four Fundamental Subspaces of Linear Algebra |
-|  | M 11/24 to W 11/26 | **Exam 3** |
+|  | M 11/24 to W 11/26 | **Exam 3** (No class session on W 11/26) |
 |  | F 11/28 | _Thanksgiving Vacation_ |
 | **15** | M 12/1 | Proper Orthogonal Decomposition |
 |  | W 12/3 | Singular Value Decomposition |
@@ -557,7 +557,7 @@ The "Read" column in the table below contains page numbers (Pg.) or chapters (ch
 | [Subspace and Span](lecture-notes/subspace-and-span.pdf) | Ch. Two I.2 @hefferon2022openintro |
 | [Linear Independence](lecture-notes/linear-independence.pdf) | Ch. Two II-II.1 @hefferon2022openintro |
 | [Basis](lecture-notes/basis.pdf) | Ch. Two III-III.1 @hefferon2022openintro |
-| Dimension | Ch. Two III.2 @hefferon2022openintro |
+| [Dimension](lecture-notes/dimension.pdf) | Ch. Two III.2 @hefferon2022openintro |
 | Vector Space | Ch. Two III.3 @hefferon2022openintro |
 | Isomorphisms | Ch. Three I-I.1 @hefferon2022openintro |
 | Characteristics | Ch. Three I.2 @hefferon2022openintro |
